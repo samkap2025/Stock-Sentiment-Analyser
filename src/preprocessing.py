@@ -20,105 +20,88 @@ class StockDataPreprocessor:
         self.combined_df = None
 
     def load_stock_data(self, stock_df):
-        """
-        Load stock data from a pandas DataFrame.
+        print("Loading stock data...")
 
-        Parameters:
-        -----------
-        stock_df : pd.DataFrame
-            Stock data with columns: Date/Index, Open, High, Low, Close, Volume
+        df = stock_df.copy()
 
-        Returns:
-        --------
-        pd.DataFrame
-            Loaded stock data
-        """
-        print(f"Loading stock data...")
+        print("\n[DEBUG] RAW STOCK INPUT")
+        print(df.shape)
+        print(df.head())
 
-        try:
-            df = stock_df.copy()
+        # 🔥 STEP 1: REMOVE BAD HEADER ROWS (IMPORTANT)
+        df = df[df.iloc[:, 0] != "Ticker"]
+        df = df[df.iloc[:, 0] != "Date"]
+        df = df.reset_index(drop=True)
 
-            # If Date is a column, set it as index
-            if 'Date' in df.columns:
-                df['Date'] = pd.to_datetime(df['Date'])
-                df = df.set_index('Date')
-            else:
-                # Try to parse the index as datetime
-                df.index = pd.to_datetime(df.index)
+        # 🔥 STEP 2: ENSURE PROPER DATE COLUMN
+        if "Date" not in df.columns:
+            df.insert(0, "Date", stock_df.iloc[:, 0])
 
-            # Convert column names to lowercase
-            df.columns = df.columns.str.lower()
+        df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
+        df = df.dropna(subset=["Date"])
 
-            self.stock_df = df
+        # 🔥 STEP 3: SET INDEX (CRITICAL FIX)
+        df = df.set_index("Date")
+        df = df.sort_index()
 
-            print(f"✓ Stock data loaded: {len(self.stock_df)} rows")
-            print(f"  Columns: {list(self.stock_df.columns)}")
-            print(f"  Date range: {self.stock_df.index.min()} to {self.stock_df.index.max()}")
+        # 🔥 STEP 4: CLEAN NUMERIC COLUMNS
+        for col in ["Open", "High", "Low", "Close", "Volume"]:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
 
-            return self.stock_df
+        df = df.dropna()
 
-        except Exception as e:
-            print(f"✗ Error loading stock data: {str(e)}")
-            return None
+        self.stock_df = df
+
+        print(f"\n✓ Stock data loaded: {len(df)} rows")
+        print("Index type:", type(df.index))
+        print(df.head())
+
+        return df
 
     def load_news_data(self, news_df):
-        """
-        Load news data from a pandas DataFrame.
-
-        Parameters:
-        -----------
-        news_df : pd.DataFrame
-            News data with columns: date, headline, source (optional), sentiment (optional), sentiment_score (optional)
-
-        Returns:
-        --------
-        pd.DataFrame
-            Loaded news data
-        """
-        print(f"Loading news data...")
+        print("Loading news data...")
 
         try:
             df = news_df.copy()
 
-            # Ensure date column exists and is datetime
-            if 'date' not in df.columns:
-                print("✗ Error: 'date' column is required")
+            # STEP 1: extract feed column (your real issue)
+            if "feed" in df.columns:
+                df = pd.json_normalize(df["feed"].tolist())
+
+            # STEP 2: map fields safely
+            if "title" in df.columns:
+                df["headline"] = df["title"]
+
+            if "time_published" in df.columns:
+                df["date"] = df["time_published"]
+
+            # if no date column exists → FAIL EARLY (important)
+            if "date" not in df.columns:
+                print("✗ NEWS ERROR: No valid date field found")
+                print("Columns:", df.columns)
                 return None
 
-            df['date'] = pd.to_datetime(df['date'])
+            df["date"] = pd.to_datetime(df["date"], errors="coerce")
+            df = df.dropna(subset=["date"])
 
-            # Ensure headline column exists
-            if 'headline' not in df.columns and 'title' in df.columns:
-                df['headline'] = df['title']
-            elif 'headline' not in df.columns:
-                print("✗ Error: 'headline' or 'title' column is required")
-                return None
+            # defaults
+            if "sentiment_score" not in df.columns:
+                df["sentiment_score"] = 0.0
 
-            # Add sentiment column if missing
-            if 'sentiment' not in df.columns:
-                df['sentiment'] = 'NEUTRAL'
+            if "sentiment" not in df.columns:
+                df["sentiment"] = "NEUTRAL"
 
-            # Add sentiment_score if missing
-            if 'sentiment_score' not in df.columns:
-                df['sentiment_score'] = 0.0
-
-            # Add source if missing
-            if 'source' not in df.columns:
-                df['source'] = 'Unknown'
-
-            # Sort by date
-            df = df.sort_values('date')
+            df["sentiment"] = df["sentiment"].str.upper()
 
             self.news_df = df
 
-            print(f"✓ News data loaded: {len(self.news_df)} articles")
-            print(f"  Date range: {self.news_df['date'].min()} to {self.news_df['date'].max()}")
-            print(f"  Sentiments: {self.news_df['sentiment'].value_counts().to_dict()}")
+            print(f"✓ News loaded: {len(df)} rows")
+            print(df.head())
 
-            return self.news_df
+            return df
 
         except Exception as e:
-            print(f"✗ Error loading news data: {str(e)}")
+            print("✗ News loading failed:", e)
             return None
 
     def clean_stock_data(self):
@@ -378,83 +361,105 @@ class StockDataPreprocessor:
     def align_stock_and_news(self):
         """
         Align stock data with news data by date.
-        Creates columns for daily sentiment aggregation.
-
-        Returns:
-        --------
-        pd.DataFrame
-            Combined dataframe with stock and aggregated news sentiment
+        Creates daily aggregated sentiment features merged into stock dataframe.
         """
+
         if self.stock_df is None or self.news_df is None:
             print("✗ Error: Both stock and news data must be loaded and cleaned first.")
             return None
 
         print("\nAligning stock data with news sentiment...")
 
+        # -----------------------------
+        # 1. COPY DATA SAFELY
+        # -----------------------------
         df = self.stock_df.copy()
         news = self.news_df.copy()
 
-        # Create date column for news (just the date part, not time)
-        news['date_only'] = news['date'].dt.date
+        # -----------------------------
+        # 2. ENSURE DATETIME FORMATS
+        # -----------------------------
+        df.index = pd.to_datetime(df.index, errors="coerce")
+        news["date"] = pd.to_datetime(news["date"], errors="coerce")
 
-        # Create date column for stock (from index)
-        df['date_only'] = df.index.date
+        df = df.dropna(axis=0)
+        news = news.dropna(subset=["date"])
 
-        # Initialize sentiment columns
-        df['sentiment_score'] = 0.0
-        df['positive_count'] = 0
-        df['negative_count'] = 0
-        df['neutral_count'] = 0
-        df['total_articles'] = 0
+        # -----------------------------
+        # 🔍 DEBUG BLOCK (ADDED HERE)
+        # -----------------------------
+        print("\n[DEBUG] STOCK DATE RANGE:", df.index.min(), df.index.max())
+        print("[DEBUG] NEWS DATE RANGE:", news["date"].min(), news["date"].max())
+        print("[DEBUG] SAMPLE NEWS DATES:", news["date"].head())
 
-        # For each stock date, aggregate all news from that date
-        for stock_date in df['date_only'].unique():
-            news_that_day = news[news['date_only'] == stock_date]
+        # -----------------------------
+        # 3. CREATE DATE KEY
+        # -----------------------------
+        df["date_only"] = df.index.floor("D")
+        news["date_only"] = news["date"].dt.floor("D")
 
-            if len(news_that_day) > 0:
-                # Calculate average sentiment score
-                avg_sentiment = news_that_day['sentiment_score'].mean()
+        # -----------------------------
+        # 4. AGGREGATE NEWS
+        # -----------------------------
+        news_agg = news.groupby("date_only").agg(
+            sentiment_score=("sentiment_score", "mean"),
+            positive_count=("sentiment", lambda x: (x == "POSITIVE").sum()),
+            negative_count=("sentiment", lambda x: (x == "NEGATIVE").sum()),
+            neutral_count=("sentiment", lambda x: (x == "NEUTRAL").sum()),
+            total_articles=("sentiment", "count")
+        ).reset_index()
 
-                # Count sentiments
-                sentiment_counts = news_that_day['sentiment'].value_counts()
+        # -----------------------------
+        # 5. MERGE WITH STOCK DATA
+        # -----------------------------
+        df = df.merge(news_agg, on="date_only", how="left")
 
-                # Update DataFrame
-                mask = df['date_only'] == stock_date
-                df.loc[mask, 'sentiment_score'] = avg_sentiment
-                df.loc[mask, 'positive_count'] = sentiment_counts.get('POSITIVE', 0)
-                df.loc[mask, 'negative_count'] = sentiment_counts.get('NEGATIVE', 0)
-                df.loc[mask, 'neutral_count'] = sentiment_counts.get('NEUTRAL', 0)
-                df.loc[mask, 'total_articles'] = len(news_that_day)
+        # -----------------------------
+        # 6. FILL MISSING VALUES SAFELY
+        # -----------------------------
+        sentiment_cols = [
+            "sentiment_score",
+            "positive_count",
+            "negative_count",
+            "neutral_count",
+            "total_articles"
+        ]
 
-        # Drop temporary date column
-        df = df.drop('date_only', axis=1)
+        for col in sentiment_cols:
+            if col not in df.columns:
+                df[col] = 0
+
+        df[sentiment_cols] = df[sentiment_cols].fillna(0)
+
+        # -----------------------------
+        # 7. CLEANUP
+        # -----------------------------
+        df = df.drop(columns=["date_only"])
 
         self.combined_df = df
 
-        # Print alignment statistics
-        days_with_news = (df['total_articles'] > 0).sum()
-        print(f"✓ Data aligned")
+        # -----------------------------
+        # 8. STATS
+        # -----------------------------
+        days_with_news = (df["total_articles"] > 0).sum()
+
+        print("✓ Data aligned successfully")
         print(f"  - Stock data days: {len(df)}")
         print(f"  - Days with news: {days_with_news}")
         print(f"  - Days without news: {len(df) - days_with_news}")
-        print(f"  - Average articles per day (with news): {df[df['total_articles'] > 0]['total_articles'].mean():.2f}")
+
+        if days_with_news > 0:
+            print(f"  - Avg articles/day (with news): {df[df['total_articles'] > 0]['total_articles'].mean():.2f}")
+        else:
+            print("  - Avg articles/day (with news): 0")
 
         return self.combined_df
 
     def handle_missing_values(self, method='forward_fill'):
         """
         Handle missing values in the dataset.
-
-        Parameters:
-        -----------
-        method : str
-            Method to use: 'forward_fill', 'backward_fill', or 'drop'
-
-        Returns:
-        --------
-        pd.DataFrame
-            Data with missing values handled
         """
+
         if self.combined_df is None:
             print("✗ Error: Combined data not created. Call align_stock_and_news() first.")
             return None
@@ -462,28 +467,29 @@ class StockDataPreprocessor:
         print("\nHandling missing values...")
 
         df = self.combined_df.copy()
+
         missing_before = df.isna().sum().sum()
 
         if method == 'forward_fill':
-            df = df.fillna(method='ffill')
-            df = df.fillna(method='bfill')  # For any remaining NaNs at the start
+            df = df.ffill()
+            df = df.bfill()
 
         elif method == 'backward_fill':
-            df = df.fillna(method='bfill')
-            df = df.fillna(method='ffill')  # For any remaining NaNs at the end
+            df = df.bfill()
+            df = df.ffill()
 
         elif method == 'drop':
             df = df.dropna()
 
         missing_after = df.isna().sum().sum()
 
-        print(f"✓ Missing values handled")
+        print("✓ Missing values handled")
         print(f"  - Missing before: {missing_before}")
         print(f"  - Missing after: {missing_after}")
         print(f"  - Rows remaining: {len(df)}")
 
         self.combined_df = df
-        return self.combined_df
+        return df
 
     def save_cleaned_data(self, output_path=None):
         """

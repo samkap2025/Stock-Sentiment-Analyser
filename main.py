@@ -35,26 +35,8 @@ def main():
     print("=" * 80)
 
     # ========== STEP 1: LOAD RAW DATA ==========
-    print("\n\n" + "=" * 80)
-    print("STEP 1: LOADING RAW DATA FROM DATA FOLDER")
-    print("=" * 80)
-
-    try:
-        # Load stock data
-        print("\nLoading stock data from: data/tsla_stock_raw.csv")
-        stock_df = pd.read_csv('data/tsla_stock_raw.csv', index_col=0)
-        stock_df.index = pd.to_datetime(stock_df.index)
-        print(f"✓ Stock data loaded: {len(stock_df)} rows")
-
-        # Load news data
-        print("\nLoading news data from: data/tsla_news_raw.json")
-        news_df = pd.read_json('data/tsla_news_raw.json')
-        print(f"✓ News data loaded: {len(news_df)} articles")
-
-    except FileNotFoundError as e:
-        print(f"✗ Error: {e}")
-        print("Make sure data/tsla_stock_raw.csv and data/tsla_news_raw.json exist")
-        return
+    stock_df = pd.read_csv('data/tsla_stock_raw.csv')
+    news_df = pd.read_json('data/tsla_news_raw.json')
 
     # ========== STEP 2: PREPROCESS DATA ==========
     print("\n\n" + "=" * 80)
@@ -70,6 +52,9 @@ def main():
     preprocessor.align_stock_and_news()
     preprocessor.handle_missing_values(method='forward_fill')
     processed_df = preprocessor.combined_df
+
+    if processed_df is None or len(processed_df) == 0:
+        raise ValueError("Preprocessing failed: combined_df is empty or None")
 
     print(f"\n✓ Preprocessing complete: {len(processed_df)} rows, {len(processed_df.columns)} columns")
 

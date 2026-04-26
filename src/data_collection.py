@@ -6,7 +6,7 @@ TICKER = "TSLA"
 START_DATE = "2021-01-01"
 END_DATE = "2026-01-01"
 
-ALPHA_VANTAGE_API_KEY = "YOUR_API_KEY"
+ALPHA_VANTAGE_API_KEY = "5LIXX5SPS31TOT3N"
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, "data")
