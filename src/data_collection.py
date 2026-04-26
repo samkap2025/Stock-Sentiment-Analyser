@@ -1,12 +1,7 @@
 import os
 import requests
-import pandas as pd
 import yfinance as yf
 
-
-# -----------------------------
-# CONFIG
-# -----------------------------
 TICKER = "TSLA"
 START_DATE = "2021-01-01"
 END_DATE = "2026-01-01"
@@ -16,10 +11,6 @@ ALPHA_VANTAGE_API_KEY = "YOUR_API_KEY"
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 
-
-# -----------------------------
-# STOCK DATA
-# -----------------------------
 def fetch_stock_data():
     print("Downloading stock data...")
 
@@ -30,10 +21,6 @@ def fetch_stock_data():
 
     print(f"Stock data saved to {file_path}")
 
-
-# -----------------------------
-# NEWS DATA
-# -----------------------------
 def fetch_news_data():
     print("Fetching raw news data...")
 
@@ -55,14 +42,10 @@ def fetch_news_data():
 
     print(f"Raw news saved to {file_path}")
 
-
-# -----------------------------
-# MAIN
-# -----------------------------
 def main():
     os.makedirs(DATA_DIR, exist_ok=True)
 
-    print("Saving to:", DATA_DIR)  # debug check
+    print("Saving to:", DATA_DIR)
 
     fetch_stock_data()
     fetch_news_data()
