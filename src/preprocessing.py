@@ -28,23 +28,23 @@ class StockDataPreprocessor:
         print(df.shape)
         print(df.head())
 
-        # 🔥 STEP 1: REMOVE BAD HEADER ROWS (IMPORTANT)
+        # STEP 1: REMOVE BAD HEADER ROWS (IMPORTANT)
         df = df[df.iloc[:, 0] != "Ticker"]
         df = df[df.iloc[:, 0] != "Date"]
         df = df.reset_index(drop=True)
 
-        # 🔥 STEP 2: ENSURE PROPER DATE COLUMN
+        # STEP 2: ENSURE PROPER DATE COLUMN
         if "Date" not in df.columns:
             df.insert(0, "Date", stock_df.iloc[:, 0])
 
         df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
         df = df.dropna(subset=["Date"])
 
-        # 🔥 STEP 3: SET INDEX (CRITICAL FIX)
+        # STEP 3: SET INDEX (CRITICAL FIX)
         df = df.set_index("Date")
         df = df.sort_index()
 
-        # 🔥 STEP 4: CLEAN NUMERIC COLUMNS
+        # STEP 4: CLEAN NUMERIC COLUMNS
         for col in ["Open", "High", "Low", "Close", "Volume"]:
             df[col] = pd.to_numeric(df[col], errors="coerce")
 
@@ -64,45 +64,75 @@ class StockDataPreprocessor:
         try:
             df = news_df.copy()
 
-            # STEP 1: extract feed column (your real issue)
+            # Expand Alpha Vantage feed
             if "feed" in df.columns:
                 df = pd.json_normalize(df["feed"].tolist())
 
-            # STEP 2: map fields safely
+            # Headline
             if "title" in df.columns:
                 df["headline"] = df["title"]
 
+            # Date
             if "time_published" in df.columns:
                 df["date"] = df["time_published"]
 
-            # if no date column exists → FAIL EARLY (important)
             if "date" not in df.columns:
                 print("✗ NEWS ERROR: No valid date field found")
-                print("Columns:", df.columns)
                 return None
 
             df["date"] = pd.to_datetime(df["date"], errors="coerce")
             df = df.dropna(subset=["date"])
 
-            # defaults
-            if "sentiment_score" not in df.columns:
-                df["sentiment_score"] = 0.0
+            # ---------- FIX: USE REAL ALPHA VANTAGE SENTIMENT ----------
+            scores = []
 
-            if "sentiment" not in df.columns:
-                df["sentiment"] = "NEUTRAL"
+            for _, row in df.iterrows():
+                score = None
 
-            df["sentiment"] = df["sentiment"].str.upper()
+                # Prefer TSLA ticker sentiment
+                if "ticker_sentiment" in row and isinstance(row["ticker_sentiment"], list):
+                    for item in row["ticker_sentiment"]:
+                        if item.get("ticker") == self.ticker:
+                            try:
+                                score = float(item.get("ticker_sentiment_score"))
+                                break
+                            except:
+                                pass
+
+                # fallback overall sentiment
+                if score is None:
+                    try:
+                        score = float(row.get("overall_sentiment_score", 0))
+                    except:
+                        score = 0.0
+
+                scores.append(score)
+
+            df["sentiment_score"] = scores
+
+            # Map labels
+            def map_sentiment(x):
+                if x > 0.15:
+                    return "POSITIVE"
+                elif x < -0.15:
+                    return "NEGATIVE"
+                else:
+                    return "NEUTRAL"
+
+            df["sentiment"] = df["sentiment_score"].apply(map_sentiment)
 
             self.news_df = df
 
             print(f"✓ News loaded: {len(df)} rows")
-            print(df.head())
+            print("\nSentiment distribution:")
+            print(df["sentiment"].value_counts())
 
             return df
 
         except Exception as e:
             print("✗ News loading failed:", e)
             return None
+        
 
     def clean_stock_data(self):
         """

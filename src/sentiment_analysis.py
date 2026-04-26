@@ -180,9 +180,9 @@ class SentimentAnalyzer:
 
         df = news_df.copy()
 
-        # If sentiment columns already exist, skip
+        # Use Alpha Vantage sentiment already extracted in preprocessing
         if 'sentiment' in df.columns and 'sentiment_score' in df.columns:
-            print("✓ Sentiment columns already exist, skipping analysis")
+            print("✓ Using Alpha Vantage sentiment scores")
             return df
 
         sentiments = []
