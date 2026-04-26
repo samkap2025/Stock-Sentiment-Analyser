@@ -1,4 +1,4 @@
-# Tesla Stock Sentiment Analyzer 📈📰
+# Tesla Stock Sentiment Analyzer
 
 A machine learning project that predicts **Tesla (TSLA) stock movement** by combining **historical stock market data** with **financial news sentiment analysis**.
 
