@@ -1,31 +1,106 @@
 import pickle
+import os
+
 
 def save_models(models, path='models/'):
+    """
+    Save all trained models to disk
+
+    Parameters:
+    -----------
+    models : dict
+        Dictionary of trained models
+    path : str
+        Directory to save models
+    """
+    os.makedirs(path, exist_ok=True)
+
     for model_name, model in models.items():
         filepath = f'{path}{model_name}_model.pkl'
-        with open(filepath, 'wb') as f:
-            pickle.dump(model, f)
-        print(f'Saved {model_name} to {filepath}')
+        try:
+            with open(filepath, 'wb') as f:
+                pickle.dump(model, f)
+            print(f'✓ Saved {model_name} to {filepath}')
+        except Exception as e:
+            print(f'✗ Error saving {model_name}: {e}')
 
 
 def load_models(path='models/'):
+    """
+    Load all trained models from disk
+
+    Parameters:
+    -----------
+    path : str
+        Directory containing model files
+
+    Returns:
+    --------
+    dict : Loaded models
+    """
     models = {}
-    import os
+
+    if not os.path.exists(path):
+        print(f"Models directory not found: {path}")
+        return models
 
     for filename in os.listdir(path):
-        if filename.endswith('.pkl'):
+        if filename.endswith('.pkl') and 'model' in filename:
             model_name = filename.replace('_model.pkl', '')
-            with open(f'{path}{filename}', 'rb') as f:
-                models[model_name] = pickle.load(f)
+            try:
+                with open(f'{path}{filename}', 'rb') as f:
+                    models[model_name] = pickle.load(f)
+                print(f'✓ Loaded {model_name}')
+            except Exception as e:
+                print(f'✗ Error loading {model_name}: {e}')
 
     return models
 
 
 def save_scaler(scaler, path='models/scaler.pkl'):
-    with open(path, 'wb') as f:
-        pickle.dump(scaler, f)
+    """
+    Save feature scaler
+
+    Parameters:
+    -----------
+    scaler : sklearn.preprocessing.StandardScaler
+        Fitted scaler
+    path : str
+        Path to save scaler
+    """
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+
+    try:
+        with open(path, 'wb') as f:
+            pickle.dump(scaler, f)
+        print(f'✓ Saved scaler to {path}')
+    except Exception as e:
+        print(f'✗ Error saving scaler: {e}')
+
 
 def load_scaler(path='models/scaler.pkl'):
-    with open(path, 'rb') as f:
-        return pickle.load(f)
+    """
+    Load feature scaler
 
+    Parameters:
+    -----------
+    path : str
+        Path to scaler file
+
+    Returns:
+    --------
+    sklearn.preprocessing.StandardScaler or None
+        Loaded scaler
+    """
+    if not os.path.exists(path):
+        print(f"Scaler file not found: {path}")
+        return None
+
+    try:
+        with open(path, 'rb') as f:
+            scaler = pickle.load(f)
+        print(f'✓ Loaded scaler from {path}')
+        return scaler
+    except Exception as e:
+        print(f'✗ Error loading scaler: {e}')
+        return None

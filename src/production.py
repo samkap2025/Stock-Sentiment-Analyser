@@ -3,8 +3,7 @@ import sys
 sys.path.append('src/')
 
 # Import all modules
-from data_collection import fetch_stock_data, fetch_news
-from preprocessing import clean_stock_data, clean_news_text
+from preprocessing import load_stock_data
 from sentiment_analysis import analyze_sentiment_vader
 from feature_engineering import add_technical_indicators
 from model_training import train_all_models
