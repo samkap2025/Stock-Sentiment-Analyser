@@ -1,0 +1,2667 @@
+{
+    "items": "50",
+    "sentiment_score_definition": "x <= -0.35: Bearish; -0.35 < x <= -0.15: Somewhat-Bearish; -0.15 < x < 0.15: Neutral; 0.15 <= x < 0.35: Somewhat_Bullish; x >= 0.35: Bullish",
+    "relevance_score_definition": "0 < x <= 1, with a higher score indicating higher relevance.",
+    "feed": [
+        {
+            "title": "General Motors Tests Buick Sedan As Valuation Signals Possible Upside",
+            "url": "https://simplywall.st/stocks/us/automobiles/nyse-gm/general-motors/news/general-motors-tests-buick-sedan-as-valuation-signals-possib",
+            "time_published": "20260426T011341",
+            "authors": [
+                "Simply Wall St"
+            ],
+            "summary": "General Motors is planning to reintroduce a Buick sedan to the U.S. market, marking a potential shift back towards passenger cars after years of focusing on SUVs and trucks. This move offers investors a new perspective on GM's product mix strategy, alongside its ongoing efforts in EVs and software. The company's shares are currently trading below analyst targets and estimated fair value, despite mild positive recent momentum.",
+            "banner_image": null,
+            "source": "Simply Wall Street",
+            "category_within_source": "General",
+            "source_domain": "Simply Wall Street",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.924003"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.821289"
+                },
+                {
+                    "topic": "energy_transportation",
+                    "relevance_score": "0.721637"
+                }
+            ],
+            "overall_sentiment_score": 0.160601,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "GM",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.181754",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.561814",
+                    "ticker_sentiment_score": "0.136578",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Key deals this week: Helix Energy, Tesla, QXO, USA Rare Earth and more (LLY:NYSE)",
+            "url": "https://seekingalpha.com/news/4579260-key-deals-this-week-helix-energy-tesla-qxo-usa-rare-earth-and-more",
+            "time_published": "20260425T193956",
+            "authors": [
+                "Arundhati Sarkar"
+            ],
+            "summary": "This article details significant deals across various sectors reported this week. Key announcements include Helix Energy Solutions and Hornbeck Offshore Services merging in an all-stock deal and a disclosure from Tesla.",
+            "banner_image": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/2228921995/image_2228921995.jpg?io=getty-c-w630",
+            "source": "Seeking Alpha",
+            "category_within_source": "General",
+            "source_domain": "Seeking Alpha",
+            "topics": [
+                {
+                    "topic": "mergers_and_acquisitions",
+                    "relevance_score": "1.000000"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.931961"
+                },
+                {
+                    "topic": "energy_transportation",
+                    "relevance_score": "0.700963"
+                },
+                {
+                    "topic": "life_sciences",
+                    "relevance_score": "0.607838"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.640888"
+                }
+            ],
+            "overall_sentiment_score": 0.147268,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "HLX",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.386959",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "LLY",
+                    "relevance_score": "0.739970",
+                    "ticker_sentiment_score": "0.049241",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.625903",
+                    "ticker_sentiment_score": "0.038340",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Cameco Corporation Stock Faces a May 5 Test After Friday\u2019s Uranium Pullback",
+            "url": "https://ts2.tech/en/cameco-corporation-stock-faces-a-may-5-test-after-fridays-uranium-pullback/",
+            "time_published": "20260425T190953",
+            "authors": [
+                "Khadija Saeed"
+            ],
+            "summary": "Cameco Corp.'s stock experienced a pullback on Friday, closing down $1.70 on the NYSE at $122.15 and C$2.45 on the Toronto exchange at C$167.02. This comes ahead of its first-quarter earnings report scheduled for May 5, which will detail the company's uranium production, deliveries, fuel services, and the impact of its stake in Westinghouse. Investors are eager to see if the company's strong contract portfolio and market position justify its recent rally despite broader uranium stock declines on Friday.",
+            "banner_image": "https://ts2.tech/wp-content/uploads/2026/04/cameco-corporation-stock-faces-a-may-5-test-after-fridays-uranium-pullback-featured.jpg.webp",
+            "source": "TechStock\u00b2",
+            "category_within_source": "General",
+            "source_domain": "TechStock\u00b2",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.912907"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.819207"
+                },
+                {
+                    "topic": "energy_transportation",
+                    "relevance_score": "0.937508"
+                }
+            ],
+            "overall_sentiment_score": 0.096077,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "CCJ",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.068579",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "LMT",
+                    "relevance_score": "0.581998",
+                    "ticker_sentiment_score": "-0.294617",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "PANW",
+                    "relevance_score": "0.553157",
+                    "ticker_sentiment_score": "0.291435",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.598188",
+                    "ticker_sentiment_score": "0.228053",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "BP p.l.c. (BP) Receives a Buy from Barclays",
+            "url": "https://www.theglobeandmail.com/investing/markets/stocks/BP/pressreleases/1518564/bp-plc-bp-receives-a-buy-from-barclays/",
+            "time_published": "20260425T150941",
+            "authors": [
+                "Tipranks"
+            ],
+            "summary": "Barclays analyst Lydia Rainforth maintained a Buy rating on BP p.l.c. with a price target of \u00a36.50. This rating aligns with a previous Buy rating from UBS, although RBC Capital recently maintained a Hold rating. The article also notes negative sentiment from corporate insiders based on recent selling activity, despite the company reporting increased quarterly revenue but also a GAAP net loss.",
+            "banner_image": null,
+            "source": "The Globe and Mail",
+            "category_within_source": "General",
+            "source_domain": "The Globe and Mail",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.929512"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.823800"
+                },
+                {
+                    "topic": "energy_transportation",
+                    "relevance_score": "0.923852"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.701710"
+                }
+            ],
+            "overall_sentiment_score": -0.143026,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "BP",
+                    "relevance_score": "0.990447",
+                    "ticker_sentiment_score": "0.320396",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "IBM",
+                    "relevance_score": "0.648914",
+                    "ticker_sentiment_score": "-0.322693",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.623668",
+                    "ticker_sentiment_score": "-0.347776",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "GE",
+                    "relevance_score": "0.582036",
+                    "ticker_sentiment_score": "-0.119729",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "ARK Innovation ETF (ARKK) ETF Holders - Institutional Ownership",
+            "url": "https://www.gurufocus.com/etf/arkk/ownership",
+            "time_published": "20260425T123924",
+            "authors": [],
+            "summary": "This article from GuruFocus focuses on the institutional ownership, or lack thereof, for the ARK Innovation ETF (ARKK). It provides current financial data for ARKK, including its PE Ratio, PB Ratio, Volume, and Dividend Yield, as well as its top holdings. The content indicates that detailed institutional ownership data is restricted to premium members.",
+            "banner_image": null,
+            "source": "GuruFocus",
+            "category_within_source": "General",
+            "source_domain": "GuruFocus",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.941496"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.704522"
+                }
+            ],
+            "overall_sentiment_score": 0.104213,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "ARKK",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.127749",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.745601",
+                    "ticker_sentiment_score": "0.146941",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.629098",
+                    "ticker_sentiment_score": "0.120216",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Did Vistra\u2019s (VST) Meta Nuclear Deal and Pelosi Options Move Just Shift Its Investment Narrative?",
+            "url": "https://simplywall.st/stocks/us/utilities/nyse-vst/vistra/news/did-vistras-vst-meta-nuclear-deal-and-pelosi-options-move-ju",
+            "time_published": "20260425T121236",
+            "authors": [
+                "Simply Wall St"
+            ],
+            "summary": "Vistra Corp. recently finalized a 20-year power purchase agreement to supply nuclear-generated electricity to Meta Platforms, strengthening its position in long-term clean power provision. This deal, coupled with Nancy Pelosi exercising call options on Vistra stock, has drawn increased attention to the company's investment narrative. The article examines how this long-term nuclear supply deal could influence Vistra's evolving risk profile and future cash flows, highlighting the balance between contracted sales, debt management, and growth initiatives, while still advising investors to be aware of regulatory and refinancing risks.",
+            "banner_image": "https://images.simplywall.st/company/539c60ee-bc50-4342-b6fb-5cde1db88e90/chart/quote-price",
+            "source": "Simply Wall Street",
+            "category_within_source": "General",
+            "source_domain": "Simply Wall Street",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.831547"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.744871"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.640559"
+                },
+                {
+                    "topic": "energy_transportation",
+                    "relevance_score": "0.613350"
+                }
+            ],
+            "overall_sentiment_score": 0.194798,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "VST",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.333941",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "META",
+                    "relevance_score": "0.840326",
+                    "ticker_sentiment_score": "0.259242",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "AES",
+                    "relevance_score": "0.595122",
+                    "ticker_sentiment_score": "0.116070",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.584036",
+                    "ticker_sentiment_score": "0.133533",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "How Will Ecolab Stock React To Its Upcoming Earnings?",
+            "url": "https://www.trefis.com/articles/597528/how-will-ecolab-stock-react-to-its-upcoming-earnings/2026-04-25",
+            "time_published": "20260425T100736",
+            "authors": [
+                "Trefis Team"
+            ],
+            "summary": "Ecolab (NYSE: ECL) is scheduled to report its earnings on April 28, 2026. This article analyzes historical post-earnings stock reactions for ECL, observing that positive one-day returns occurred about 55% of the time over the last five years. It also considers the correlation between short-term and medium-term returns after earnings, and how peer performance might influence Ecolab's stock reaction.",
+            "banner_image": "https://s3.amazonaws.com/wp-uploads-trefis/articles/wp-content/uploads/2025/10/27054923/earnings_return-300x300.png",
+            "source": "Trefis",
+            "category_within_source": "General",
+            "source_domain": "Trefis",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.934131"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.746784"
+                }
+            ],
+            "overall_sentiment_score": 0.104967,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "ECL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.002651",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "META",
+                    "relevance_score": "0.602477",
+                    "ticker_sentiment_score": "0.332556",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.639964",
+                    "ticker_sentiment_score": "-0.119965",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "0.649867",
+                    "ticker_sentiment_score": "0.002258",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "EPAM",
+                    "relevance_score": "0.630649",
+                    "ticker_sentiment_score": "0.218303",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Nutex Health or HCA Healthcare: Which Stock Has More Upside?",
+            "url": "https://www.trefis.com/stock/hca/articles/597498/nutex-health-or-hca-healthcare-which-stock-has-more-upside/2026-04-25",
+            "time_published": "20260425T053902",
+            "authors": [
+                "Trefis Team"
+            ],
+            "summary": "This article compares Nutex Health (NUTX) and HCA Healthcare (HCA) stocks, suggesting that NUTX offers superior revenue growth, better profitability, and a lower valuation. While HCA has shown more consistent historical returns and lower drawdowns, NUTX boasts higher average revenue growth and operating margins. The analysis provides a side-by-side comparison of fundamentals and historical performance to help investors decide which stock might have more upside potential.",
+            "banner_image": null,
+            "source": "Trefis",
+            "category_within_source": "General",
+            "source_domain": "Trefis",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.903850"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.840064"
+                },
+                {
+                    "topic": "life_sciences",
+                    "relevance_score": "0.714265"
+                }
+            ],
+            "overall_sentiment_score": 0.211827,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "NUTX",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.438733",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "HCA",
+                    "relevance_score": "0.930990",
+                    "ticker_sentiment_score": "0.207184",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "META",
+                    "relevance_score": "0.642683",
+                    "ticker_sentiment_score": "0.310974",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.604788",
+                    "ticker_sentiment_score": "-0.122656",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "0.616770",
+                    "ticker_sentiment_score": "0.135610",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Does Intel's Post Q1 Surge Signal a Turnaround Worth Buying Into?",
+            "url": "https://www.tradingview.com/news/zacks:46aeb162f094b:0-does-intel-s-post-q1-surge-signal-a-turnaround-worth-buying-into/",
+            "time_published": "20260425T053748",
+            "authors": [
+                "Zacks"
+            ],
+            "summary": "Intel's stock surged dramatically after a strong Q1 report, driven by increased demand for CPUs in AI workloads like inference and agentic computing. The company returned to profitability and provided optimistic guidance for Q2, indicating a promising turnaround fueled by strategic investments and market alignment. Analysts are signaling a potential upgrade from a \"Hold\" rating to a \"Buy\" as EPS estimates are expected to rise.",
+            "banner_image": null,
+            "source": "TradingView",
+            "category_within_source": "General",
+            "source_domain": "TradingView",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.908968"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.841189"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.718890"
+                }
+            ],
+            "overall_sentiment_score": 0.323118,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.739440",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.634157",
+                    "ticker_sentiment_score": "0.114532",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "LMT",
+                    "relevance_score": "0.601229",
+                    "ticker_sentiment_score": "0.146296",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.744274",
+                    "ticker_sentiment_score": "0.347610",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Tesla remains weak below the $400 level for NASDAQ:TSLA by FOREXcom",
+            "url": "https://www.tradingview.com/chart/TSLA/AVRTMIBj-Tesla-remains-weak-below-the-400-level/",
+            "time_published": "20260425T050833",
+            "authors": [
+                "Julian Pineda",
+                "CFA",
+                "CMT"
+            ],
+            "summary": "Tesla stock has experienced a difficult trading week, declining over 3% in recent sessions due to concerns about slowing demand and the need for price reductions, despite slightly beating EPS expectations. The stock remains in a bearish downtrend, respecting a trendline from December 2025, with key resistance at $400 and $435, and support at the 2026 low of $344. Technical indicators like RSI and MACD suggest a neutral phase, with continued weakness expected if selling pressure persists.",
+            "banner_image": "https://s3.tradingview.com/a/AVRTMIBj_mid.webp",
+            "source": "TradingView",
+            "category_within_source": "General",
+            "source_domain": "TradingView",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.941560"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.838447"
+                },
+                {
+                    "topic": "energy_transportation",
+                    "relevance_score": "0.749347"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.639949"
+                }
+            ],
+            "overall_sentiment_score": -0.403479,
+            "overall_sentiment_label": "Bearish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "-0.423002",
+                    "ticker_sentiment_label": "Bearish"
+                }
+            ]
+        },
+        {
+            "title": "Leonardo DRS Stock Plummets -16% With 8-Day Losing Streak",
+            "url": "https://www.trefis.com/stock/drs/articles/597483/leonardo-drs-stock-plummets-16-with-8-day-losing-streak/2026-04-25",
+            "time_published": "20260425T044001",
+            "authors": [
+                "Trefis Team"
+            ],
+            "summary": "Leonardo DRS (DRS) stock has experienced an 8-day losing streak, plummeting 16% and reducing its market cap by approximately $2.0 billion to $11 billion. Despite this recent decline, the company boasts strong operating performance and financial condition, suggesting it is fairly priced due to its high valuation. The article also highlights the performance of DRS stock compared to the S&P 500 and provides key financial data for the company.",
+            "banner_image": "https://cdn.trefis.com/env/prd/logos/DRS.png",
+            "source": "Trefis",
+            "category_within_source": "General",
+            "source_domain": "Trefis",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.900163"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.829064"
+                }
+            ],
+            "overall_sentiment_score": 0.0404,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "DRS",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "-0.331068",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "META",
+                    "relevance_score": "0.628092",
+                    "ticker_sentiment_score": "0.127602",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.623022",
+                    "ticker_sentiment_score": "0.108562",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "0.647671",
+                    "ticker_sentiment_score": "0.146580",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "EPAM",
+                    "relevance_score": "0.632174",
+                    "ticker_sentiment_score": "0.147837",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "EXCLUSIVE: Ross Gerber Says He's A 'Tesla Lover, Elon Critic' \u2013 Why He Sees Himself As The Tesla Hero And Not A Villain",
+            "url": "https://www.sahmcapital.com/news/content/exclusive-ross-gerber-says-hes-a-tesla-lover-elon-critic-why-he-sees-himself-as-the-tesla-hero-and-not-a-villain-2026-04-23",
+            "time_published": "20260424T210918",
+            "authors": [
+                "Benzinga News"
+            ],
+            "summary": "Ross Gerber, CEO of Gerber Kawasaki, describes himself as a \"Tesla lover, Elon critic,\" believing he acts as a hero for Tesla by advocating for the company while criticizing Elon Musk's political narratives. Gerber emphasizes that Tesla is a public company and Musk's personal views should not dominate its brand, arguing that these divisive opinions harm the company's image and sales potential. He highlights his past support for Tesla and Musk, and his current concern that Musk's leadership is negatively impacting the brand, urging a separation of Musk's personal opinions from Tesla's public image.",
+            "banner_image": null,
+            "source": "Sahm",
+            "category_within_source": "General",
+            "source_domain": "Sahm",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.900915"
+                },
+                {
+                    "topic": "energy_transportation",
+                    "relevance_score": "0.846822"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.717124"
+                }
+            ],
+            "overall_sentiment_score": 0.048101,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "GK",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.042610",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.900524",
+                    "ticker_sentiment_score": "0.067665",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Why Are Unity Software Shares Sliding On Thursday?",
+            "url": "https://www.sahmcapital.com/news/content/why-are-unity-software-shares-sliding-on-thursday-2026-04-23",
+            "time_published": "20260424T203914",
+            "authors": [
+                "Benzinga News"
+            ],
+            "summary": "Unity Software (U) shares fell on Thursday, despite the S&P 500 gaining, primarily due to sector-wide pressure influenced by AI concerns and cautious outlooks from IBM and ServiceNow. The market is worried that AI might disrupt the traditional software-as-a-service model, leading companies to build proprietary tools instead of paying subscription fees. Geopolitical tensions also contributed to market volatility, overshadowing Unity's recent alliance with Meta Platforms.",
+            "banner_image": "https://r.sahmcapital.com/fe/hs-sa-web-nuxt-www-alsahm/img/logo.456360b.png",
+            "source": "Sahm",
+            "category_within_source": "General",
+            "source_domain": "Sahm",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.901773"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.817952"
+                },
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.742853"
+                },
+                {
+                    "topic": "economy_macro",
+                    "relevance_score": "0.620517"
+                }
+            ],
+            "overall_sentiment_score": -0.282612,
+            "overall_sentiment_label": "Somewhat-Bearish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "U",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "-0.411223",
+                    "ticker_sentiment_label": "Bearish"
+                },
+                {
+                    "ticker": "IBM",
+                    "relevance_score": "0.746117",
+                    "ticker_sentiment_score": "-0.206857",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "NOW",
+                    "relevance_score": "0.724099",
+                    "ticker_sentiment_score": "-0.247047",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.642976",
+                    "ticker_sentiment_score": "-0.325942",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                }
+            ]
+        },
+        {
+            "title": "Morgan Stanley Upgrades Harmony Gold (HMY) to Overweight",
+            "url": "https://www.insidermonkey.com/blog/morgan-stanley-upgrades-harmony-gold-hmy-to-overweight-1746018/?amp=1",
+            "time_published": "20260424T203850",
+            "authors": [
+                "Jeff Lewis"
+            ],
+            "summary": "Morgan Stanley has upgraded Harmony Gold Mining Company Limited (NYSE:HMY) to Overweight from Equal Weight, raising its price target due to a higher gold price forecast and the company's relative underperformance providing a valuation buffer. Harmony Gold reported a 20% year-over-year revenue increase and revised its dividend policy to return up to 50% of net free cash to investors. The company is involved in mineral exploration and processing across several regions.",
+            "banner_image": null,
+            "source": "Insider Monkey",
+            "category_within_source": "General",
+            "source_domain": "Insider Monkey",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.920840"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.808808"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.722295"
+                }
+            ],
+            "overall_sentiment_score": 0.369699,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "HMY",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.407728",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "MS",
+                    "relevance_score": "0.627843",
+                    "ticker_sentiment_score": "0.340614",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "AMZN",
+                    "relevance_score": "0.632894",
+                    "ticker_sentiment_score": "0.339138",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.649409",
+                    "ticker_sentiment_score": "0.305833",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "META",
+                    "relevance_score": "0.614086",
+                    "ticker_sentiment_score": "0.341504",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "\u2018This is a \u2018come to Jesus moment\u2019: Ford CEO says American carmakers are battling a perfect storm",
+            "url": "https://fortune.com/2026/04/24/ford-ceo-jim-farley-automakers-threats-three-perfect-storms-us-companies/",
+            "time_published": "20260424T193738",
+            "authors": [
+                "Marco Quiroz-Gutierrez"
+            ],
+            "summary": "Ford CEO Jim Farley believes the automotive industry is facing three existential \"perfect-storm moments\": competition from Chinese carmakers, increased complexity due to EVs and software-defined vehicles, and regulatory uncertainty regarding emissions standards. He emphasizes that automakers must adapt to these challenges or face severe consequences. Ford is responding by hedging its bets with hybrids and a smaller, affordable EV platform after experiencing setbacks with its F-150 Lightning.",
+            "banner_image": "https://fortune.com/img-assets/wp-content/uploads/2026/04/GettyImages-2237913032-e1777058114549.jpg?format=webp&w=1440&q=100",
+            "source": "Fortune",
+            "category_within_source": "General",
+            "source_domain": "Fortune",
+            "topics": [
+                {
+                    "topic": "energy_transportation",
+                    "relevance_score": "0.900278"
+                },
+                {
+                    "topic": "economy_macro",
+                    "relevance_score": "0.708408"
+                },
+                {
+                    "topic": "manufacturing",
+                    "relevance_score": "0.616534"
+                }
+            ],
+            "overall_sentiment_score": -0.07866,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "F",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "-0.231235",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "GM",
+                    "relevance_score": "0.634741",
+                    "ticker_sentiment_score": "-0.122470",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.609893",
+                    "ticker_sentiment_score": "0.131067",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Synopsys Inc Stock (SNPS) Moved Up by 9.43% on Apr 24: What Investors Need To Know",
+            "url": "https://www.tradingkey.com/news/market-movers/261822505-market-movers-snps-20260424",
+            "time_published": "20260424T191615",
+            "authors": [
+                "TradingKey"
+            ],
+            "summary": "Synopsys Inc. (SNPS) stock rose by 9.43% on April 24, driven by strategic partnerships and technological advancements in AI and semiconductor sectors. Key factors include an expanded collaboration with TSMC for next-generation AI systems, a partnership with Atomera for GaN device modeling, and selection by NASA for the Artemis program. These developments, along with positive quarterly earnings, have outweighed mixed analyst ratings and concerns about the Design IP business.",
+            "banner_image": null,
+            "source": "TradingKey",
+            "category_within_source": "General",
+            "source_domain": "TradingKey",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.901843"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.840867"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.700655"
+                }
+            ],
+            "overall_sentiment_score": 0.366699,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "SNPS",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.467916",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.619973",
+                    "ticker_sentiment_score": "0.310123",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "0.629339",
+                    "ticker_sentiment_score": "0.373222",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "MSFT",
+                    "relevance_score": "0.563102",
+                    "ticker_sentiment_score": "0.207181",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Liberty Broadband Corp stock hits 52-week low at $23.19 By Investing.com",
+            "url": "https://ca.investing.com/news/company-news/liberty-broadband-corp-stock-hits-52week-low-at-2319-93CH-4586534",
+            "time_published": "20260424T154016",
+            "authors": [
+                "Investing.com"
+            ],
+            "summary": "Liberty Broadband Corp's stock has fallen to a 52-week low of $23.19, reflecting decreased investor confidence and a 1-year change of -3.28%. Despite this, InvestingPro analysis suggests the stock is slightly undervalued, offers a dividend yield of 7.49%, and analysts predict the company will be profitable this year. The dip may be due to industry challenges or broader economic pressures.",
+            "banner_image": "https://i-invdn-com.investing.com/news/LYNXNPEB6208D_L.jpg",
+            "source": "Investing.com Canada",
+            "category_within_source": "General",
+            "source_domain": "Investing.com Canada",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.938994"
+                }
+            ],
+            "overall_sentiment_score": -0.048654,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "LBRDP",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "-0.401323",
+                    "ticker_sentiment_label": "Bearish"
+                },
+                {
+                    "ticker": "AVGO",
+                    "relevance_score": "0.586018",
+                    "ticker_sentiment_score": "0.208684",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "0.584645",
+                    "ticker_sentiment_score": "0.205768",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.585840",
+                    "ticker_sentiment_score": "0.217683",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.581025",
+                    "ticker_sentiment_score": "-0.204315",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                }
+            ]
+        },
+        {
+            "title": "Rogers stock hits 52-week high at 132.06 USD By Investing.com",
+            "url": "https://ca.investing.com/news/company-news/rogers-stock-hits-52week-high-at-13206-usd-93CH-4586567",
+            "time_published": "20260424T153945",
+            "authors": [
+                "Investing.com"
+            ],
+            "summary": "Rogers Corp (ROG) stock reached a new 52-week high of $132.06, reflecting a 128.24% increase over the past year. The company's market capitalization is $2.34 billion, and its stock is currently trading slightly above its InvestingPro Fair Value. Rogers Corp also reported strong Q4 earnings, surpassing analyst expectations for both EPS and revenue, driven by growth in industrial, ADAS, and renewable energy sectors.",
+            "banner_image": "https://i-invdn-com.investing.com/news/LYNXNPEB660A4_L.jpg",
+            "source": "Investing.com Canada",
+            "category_within_source": "General",
+            "source_domain": "Investing.com Canada",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.909733"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.803158"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.722430"
+                },
+                {
+                    "topic": "manufacturing",
+                    "relevance_score": "0.622877"
+                }
+            ],
+            "overall_sentiment_score": 0.176393,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "ROG",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.495258",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "0.605984",
+                    "ticker_sentiment_score": "-0.110216",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.641444",
+                    "ticker_sentiment_score": "0.202804",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.641960",
+                    "ticker_sentiment_score": "0.303547",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.631881",
+                    "ticker_sentiment_score": "-0.111051",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Texas Instruments Stock: The Unexpected AI Winner - Broadcom (NASDAQ:AVGO), NVIDIA (NASDAQ:NVDA)",
+            "url": "https://www.benzinga.com/markets/tech/26/04/52034021/texas-instruments-stock-unexpected-ai-winner-txn",
+            "time_published": "20260424T150706",
+            "authors": [
+                "Piero Cingari"
+            ],
+            "summary": "Texas Instruments (TXN) experienced a significant stock surge, up over 20% weekly, driven by unexpected growth in its data center revenue related to AI infrastructure. Despite being known for calculators, the company's analog semiconductors, crucial for converting real-world signals into digital data, are finding increased demand in data centers, a segment that now constitutes 11% of its business. Analysts have responded positively, with multiple price target upgrades following strong Q1 earnings and Q2 guidance, highlighting an \"unexpected AI winner\" in the semiconductor space.",
+            "banner_image": "https://cdn.benzinga.com/files/images/story/2026/04/24/Texas-Instruments-Corporate-Sign.jpeg?quality=85&auto=webp&width=850",
+            "source": "Benzinga",
+            "category_within_source": "General",
+            "source_domain": "Benzinga",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.922185"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "1.000000"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.812113"
+                }
+            ],
+            "overall_sentiment_score": 0.2905,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AVGO",
+                    "relevance_score": "0.629880",
+                    "ticker_sentiment_score": "0.307563",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.638900",
+                    "ticker_sentiment_score": "0.380415",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "TXN",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.533286",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "0.564041",
+                    "ticker_sentiment_score": "0.327753",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.565183",
+                    "ticker_sentiment_score": "-0.212107",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                }
+            ]
+        },
+        {
+            "title": "Royal Bank Of Canada Issues Positive Forecast for Intel (NASDAQ:INTC) Stock Price",
+            "url": "https://www.marketbeat.com/instant-alerts/royal-bank-of-canada-issues-positive-forecast-for-intel-nasdaqintc-stock-price-2026-04-24/",
+            "time_published": "20260424T143946",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Royal Bank of Canada increased its price target for Intel (NASDAQ:INTC) from $48 to $80, maintaining a \"sector perform\" rating. This upgrade comes after Intel reported strong Q1 results, beating EPS and revenue estimates, and issued positive guidance, driven largely by demand for AI servers. Despite the positive forecast and recent stock surge, some analysts remain skeptical about valuation and long-term foundry margins.",
+            "banner_image": "https://www.marketbeat.com/logos/intel-co-logo-1200x675.png?v=20250605133156",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.938431"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.818569"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.738547"
+                }
+            ],
+            "overall_sentiment_score": 0.376422,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "RY",
+                    "relevance_score": "0.728272",
+                    "ticker_sentiment_score": "0.307065",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.433759",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.627346",
+                    "ticker_sentiment_score": "0.319730",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "YieldMax TSLA option income strategy ETF announces weekly distribution of $0.2955",
+            "url": "http://www.msn.com/en-us/money/topstocks/yieldmax-tsla-option-income-strategy-etf-announces-weekly-distribution-of-0-2955/ar-AA21u6uk?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1&bundles=feat-es2020-t",
+            "time_published": "20260424T143917",
+            "authors": [],
+            "summary": "The YieldMax TSLA option income strategy ETF (TSLY) has declared a weekly distribution of $0.2955 per share. This announcement highlights the ETF's strategy to provide income through options, offering investors regular payouts.",
+            "banner_image": null,
+            "source": "MSN",
+            "category_within_source": "General",
+            "source_domain": "MSN",
+            "topics": [
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.919911"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.823497"
+                },
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.705189"
+                }
+            ],
+            "overall_sentiment_score": 0.315395,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "TSLY",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.329217",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.800852",
+                    "ticker_sentiment_score": "0.348525",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Qualcomm Stock Is Climbing In Sympathy With Intel's Q1 Results",
+            "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52031420/qualcomm-stock-is-climbing-in-sympathy-with-intels-q1-results",
+            "time_published": "20260424T141620",
+            "authors": [],
+            "summary": "Qualcomm (NASDAQ: QCOM) shares rose after Intel announced strong first-quarter results, signaling an improving chip supply chain and increased demand. Intel's AI-related revenue surge and optimistic guidance suggest broader semiconductor strength, benefiting Qualcomm's mobile, automotive, and edge-computing segments. While short-term momentum is positive, Qualcomm's stock is still in a \"repair mode,\" needing continued buyer interest to confirm a full trend reversal.",
+            "banner_image": "https://cdn.benzinga.com/files/images/story/2025/07/24/article-header-background-image.png?quality=85&auto=webp&width=1300",
+            "source": "Benzinga",
+            "category_within_source": "General",
+            "source_domain": "Benzinga",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.915241"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.840310"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.746235"
+                }
+            ],
+            "overall_sentiment_score": 0.388517,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "QCOM",
+                    "relevance_score": "0.991795",
+                    "ticker_sentiment_score": "0.491349",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "0.861681",
+                    "ticker_sentiment_score": "0.519226",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.601162",
+                    "ticker_sentiment_score": "0.208705",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Roundhill TSLA WeeklyPay ETF announces weekly distribution of $0.1915",
+            "url": "http://www.msn.com/en-us/money/economy/roundhill-tsla-weeklypay-etf-announces-weekly-distribution-of-0-1915/ar-AA201uJi?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1&bundles=feat-es2020-t",
+            "time_published": "20260424T141030",
+            "authors": [],
+            "summary": "The Roundhill TSLA WeeklyPay ETF (TSLP) has announced a weekly distribution of $0.1915 per share for its shareholders of record as of April 29, 2026. The ex-dividend date is April 29, 2026, and the payment date is May 1, 2026. This distribution reflects the ETF's strategy to provide regular income to investors.",
+            "banner_image": null,
+            "source": "MSN",
+            "category_within_source": "General",
+            "source_domain": "MSN",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.938172"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.803902"
+                },
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.712803"
+                }
+            ],
+            "overall_sentiment_score": 0.057644,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "TSW",
+                    "relevance_score": "0.335372",
+                    "ticker_sentiment_score": "0.049350",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.576019",
+                    "ticker_sentiment_score": "0.136650",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Truist Financial Forecasts Strong Price Appreciation for Intel (NASDAQ:INTC) Stock",
+            "url": "https://www.marketbeat.com/instant-alerts/truist-financial-forecasts-strong-price-appreciation-for-intel-nasdaqintc-stock-2026-04-24/",
+            "time_published": "20260424T140929",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Truist Financial has increased its price target for Intel (NASDAQ:INTC) stock from $49 to $81, maintaining a \"hold\" rating, following Intel's robust Q1 earnings beat and optimistic guidance, including a significant validation from Tesla for its 14A foundry process. This move comes as Intel's shares surged approximately 22.8% to $82, though the stock still carries a consensus \"Hold\" rating with an average target of $70.98 among analysts. Despite the positive sentiment driven by AI-related demand, valuation concerns and broader macroeconomic risks continue to draw skepticism from some financial firms.",
+            "banner_image": "https://www.marketbeat.com/logos/intel-co-logo-1200x675.png?v=20250605133156",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.942211"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.838820"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.707186"
+                },
+                {
+                    "topic": "economy_macro",
+                    "relevance_score": "0.612007"
+                }
+            ],
+            "overall_sentiment_score": 0.335123,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "TFC",
+                    "relevance_score": "0.734021",
+                    "ticker_sentiment_score": "0.384281",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.456856",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.616513",
+                    "ticker_sentiment_score": "0.344158",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "AMD",
+                    "relevance_score": "0.562452",
+                    "ticker_sentiment_score": "0.126467",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "UBS Adjusts Price Target on Molina Healthcare to $180 From $151, Maintains Neutral Rating",
+            "url": "https://www.marketscreener.com/news/ubs-adjusts-price-target-on-molina-healthcare-to-180-from-151-maintains-neutral-rating-ce7f59dfdd8ff022",
+            "time_published": "20260424T135306",
+            "authors": [],
+            "summary": "UBS has increased its price target for Molina Healthcare (MOH) to $180 from $151, while choosing to maintain a \"Neutral\" rating on the stock. This adjustment reflects an updated valuation for the managed healthcare provider. The article also notes that Deutsche Bank similarly adjusted its price target for Molina Healthcare earlier the same day.",
+            "banner_image": "https://www.marketscreener.com/images/mtnewswires.png",
+            "source": "marketscreener.com",
+            "category_within_source": "General",
+            "source_domain": "marketscreener.com",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.909644"
+                },
+                {
+                    "topic": "life_sciences",
+                    "relevance_score": "0.844670"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.727208"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.626003"
+                }
+            ],
+            "overall_sentiment_score": 0.145447,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "MOH",
+                    "relevance_score": "0.971015",
+                    "ticker_sentiment_score": "0.227902",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "URI",
+                    "relevance_score": "0.626246",
+                    "ticker_sentiment_score": "0.122881",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "IBM",
+                    "relevance_score": "0.648250",
+                    "ticker_sentiment_score": "0.101268",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "AMD",
+                    "relevance_score": "0.638478",
+                    "ticker_sentiment_score": "0.144446",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.611038",
+                    "ticker_sentiment_score": "0.130126",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Honda to exit S.Korea\u2019s car market as Chinese rivals step up EV push",
+            "url": "https://www.kedglobal.com/automobiles/newsView/ked202604240001",
+            "time_published": "20260424T133941",
+            "authors": [],
+            "summary": "Honda Motor Co. is set to withdraw from South Korea's automobile market by the end of 2026, 23 years after its entry, due to its declining market share (0.6% in 2025) while Chinese EV sales surged. This move comes as Chinese automakers like BYD, Zeekr, and XPeng intensify their push into the South Korean EV market, leading to increased competition and aggressive pricing strategies from established players like Kia.",
+            "banner_image": "https://www.kedglobal.com/data/ked/image/2026/04/24/ked202604240002.700x.9.jpg",
+            "source": "KED Global",
+            "category_within_source": "General",
+            "source_domain": "KED Global",
+            "topics": [
+                {
+                    "topic": "energy_transportation",
+                    "relevance_score": "0.944434"
+                },
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.847901"
+                }
+            ],
+            "overall_sentiment_score": -0.058266,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "HMC",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "-0.238746",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "GM",
+                    "relevance_score": "0.636373",
+                    "ticker_sentiment_score": "-0.079467",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.720281",
+                    "ticker_sentiment_score": "0.123801",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "F",
+                    "relevance_score": "0.611604",
+                    "ticker_sentiment_score": "0.044499",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Ford Stock Nears Dreaded Death Cross As EV Setback Sinks In",
+            "url": "https://www.benzinga.com/trading-ideas/technicals/26/04/52030484/ford-stock-nears-dreaded-death-cross-as-ev-setback-sinks-in",
+            "time_published": "20260424T133732",
+            "authors": [
+                "Surbhi Jain"
+            ],
+            "summary": "Ford Motor Company's stock is approaching a \"Death Cross,\" a bearish technical signal where the 50-day moving average falls below the 200-day moving average. This technical weakness is compounded by fundamental pressures, including a 9% year-over-year drop in Q1 deliveries and a sharp decline in EV sales. Ford is pivoting towards hybrids and more affordable vehicles as demand for high-priced EVs cools, contributing to the stock's struggle to regain momentum.",
+            "banner_image": "https://cdn.benzinga.com/files/images/story/2025/07/24/article-header-background-image.png?quality=85&auto=webp&width=1300",
+            "source": "Benzinga",
+            "category_within_source": "General",
+            "source_domain": "Benzinga",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.940377"
+                },
+                {
+                    "topic": "energy_transportation",
+                    "relevance_score": "0.809434"
+                },
+                {
+                    "topic": "economy_macro",
+                    "relevance_score": "0.644111"
+                }
+            ],
+            "overall_sentiment_score": -0.310388,
+            "overall_sentiment_label": "Somewhat-Bearish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "F",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "-0.418519",
+                    "ticker_sentiment_label": "Bearish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.602078",
+                    "ticker_sentiment_score": "-0.186709",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                }
+            ]
+        },
+        {
+            "title": "TSMC Shares Hit Record High as Taiwan Unlocks Billions in Fund Flows",
+            "url": "https://www.tradingview.com/news/gurufocus:2f49a48c6094b:0-tsmc-shares-hit-record-high-as-taiwan-unlocks-billions-in-fund-flows/",
+            "time_published": "20260424T130938",
+            "authors": [],
+            "summary": "Taiwan Semiconductor Manufacturing (TSMC) shares reached a record high after Taiwan authorities relaxed rules regarding investment fund allocation to a single stock. This regulatory change permits local equity funds and actively managed ETFs to invest up to 25% of assets in companies with an index weighting over 10%, potentially leading to over $6 billion in inflows for Taiwanese equities and increased allocation for ETFs tied to Taiwan. The move has boosted TSMC, with its shares gaining about 4% and the broader Taiex index rising roughly 3%.",
+            "banner_image": null,
+            "source": "TradingView",
+            "category_within_source": "General",
+            "source_domain": "TradingView",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.905067"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.839489"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.725725"
+                },
+                {
+                    "topic": "economy_macro",
+                    "relevance_score": "0.636693"
+                },
+                {
+                    "topic": "manufacturing",
+                    "relevance_score": "0.591629"
+                }
+            ],
+            "overall_sentiment_score": 0.213531,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "FLTW",
+                    "relevance_score": "0.320545",
+                    "ticker_sentiment_score": "0.021962",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "META",
+                    "relevance_score": "0.722044",
+                    "ticker_sentiment_score": "0.272622",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.732779",
+                    "ticker_sentiment_score": "0.299346",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.701979",
+                    "ticker_sentiment_score": "0.284198",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "BEN",
+                    "relevance_score": "0.605841",
+                    "ticker_sentiment_score": "0.303399",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "How Will Brown & Brown Stock React To Its Upcoming Earnings?",
+            "url": "https://www.trefis.com/articles/597353/how-will-brown-brown-stock-react-to-its-upcoming-earnings/2026-04-24",
+            "time_published": "20260424T130412",
+            "authors": [
+                "Trefis Team"
+            ],
+            "summary": "Brown & Brown (NYSE: BRO) is scheduled to report its earnings on April 27, 2026. The article analyzes historical post-earnings stock reactions for BRO over the past five years, noting that positive one-day returns occurred in approximately 39% of cases. It also provides statistics for 5-day and 21-day returns and examines the correlation between short-term and medium-term returns to help event-driven traders.",
+            "banner_image": "https://s3.amazonaws.com/wp-uploads-trefis/articles/wp-content/uploads/2025/10/27054923/earnings_return-300x300.png",
+            "source": "Trefis",
+            "category_within_source": "General",
+            "source_domain": "Trefis",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.902818"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.712808"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.645307"
+                }
+            ],
+            "overall_sentiment_score": 0.052519,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "BRO",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.024921",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "PWR",
+                    "relevance_score": "0.568649",
+                    "ticker_sentiment_score": "0.136888",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.595550",
+                    "ticker_sentiment_score": "-0.071295",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "AMD",
+                    "relevance_score": "0.602529",
+                    "ticker_sentiment_score": "0.079796",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "AVGO",
+                    "relevance_score": "0.574985",
+                    "ticker_sentiment_score": "0.074932",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "How Will Ventas Stock React To Its Upcoming Earnings?",
+            "url": "https://www.trefis.com/stock/vtr/articles/597350/how-will-ventas-stock-react-to-its-upcoming-earnings/2026-04-24",
+            "time_published": "20260424T125234",
+            "authors": [
+                "Trefis Team"
+            ],
+            "summary": "Ventas (NYSE:VTR) is set to report earnings on April 27, 2026, with a current market capitalization of $38 billion and $5.8 billion in revenue over the last twelve months. Historically, Ventas stock has shown positive one-day returns post-earnings approximately 63% of the time over the past five years. The article also provides a detailed correlation analysis of 1-day, 5-day, and 21-day historical returns, suggesting strategies for event-driven traders.",
+            "banner_image": "https://s3.amazonaws.com/wp-uploads-trefis/articles/wp-content/uploads/2025/10/27054923/earnings_return-300x300.png",
+            "source": "Trefis",
+            "category_within_source": "General",
+            "source_domain": "Trefis",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.917640"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.842339"
+                },
+                {
+                    "topic": "real_estate",
+                    "relevance_score": "0.746289"
+                }
+            ],
+            "overall_sentiment_score": 0.098564,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "VTR",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.035044",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "PWR",
+                    "relevance_score": "0.632619",
+                    "ticker_sentiment_score": "0.116563",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "AMD",
+                    "relevance_score": "0.639077",
+                    "ticker_sentiment_score": "0.137717",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.708944",
+                    "ticker_sentiment_score": "0.113597",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "AVGO",
+                    "relevance_score": "0.601123",
+                    "ticker_sentiment_score": "0.105692",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Get Paid 10% to Buy PWR at a 30% Discount \u2013 Here\u2019s How",
+            "url": "https://www.trefis.com/stock/pwr/articles2/597363/get-paid-10-to-buy-pwr-at-a-30-discount-heres-how/2026-04-24",
+            "time_published": "20260424T122617",
+            "authors": [
+                "Trefis Team"
+            ],
+            "summary": "This article outlines a strategy to potentially buy Quanta Services (PWR) stock at a significant discount while earning a 10% annualized yield. The method involves selling a long-dated put option with a strike price of $440, which offers a premium and the opportunity to acquire the stock at a lower effective cost if the price falls. It also highlights the Trefis High Quality Portfolio as an alternative for those uncomfortable with options or stock-specific trades.",
+            "banner_image": "https://cdn.trefis.com/env/prd/logos/PWR.png",
+            "source": "Trefis",
+            "category_within_source": "General",
+            "source_domain": "Trefis",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.927408"
+                },
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.723546"
+                },
+                {
+                    "topic": "manufacturing",
+                    "relevance_score": "0.627879"
+                },
+                {
+                    "topic": "real_estate",
+                    "relevance_score": "0.631331"
+                }
+            ],
+            "overall_sentiment_score": 0.171281,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "PWR",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.485211",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "DE",
+                    "relevance_score": "0.639463",
+                    "ticker_sentiment_score": "0.113705",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.573551",
+                    "ticker_sentiment_score": "0.144568",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "AMAT",
+                    "relevance_score": "0.585503",
+                    "ticker_sentiment_score": "0.111287",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "AVGO",
+                    "relevance_score": "0.553794",
+                    "ticker_sentiment_score": "0.106341",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Analysts\u2019 Opinions Are Mixed on These Consumer Cyclical Stocks: Tesla (TSLA), Expedia (EXPE) and Valvoline (VVV)",
+            "url": "https://www.theglobeandmail.com/investing/markets/stocks/EXPE/pressreleases/1498319/analysts-opinions-are-mixed-on-these-consumer-cyclical-stocks-tesla-tsla-expedia-expe-and-valvoline-vvv/",
+            "time_published": "20260424T113957",
+            "authors": [
+                "Tipranks"
+            ],
+            "summary": "Analysts have issued mixed ratings for several consumer cyclical stocks. Tesla (TSLA) received a \"Buy\" from TD Cowen with a $490 price target, though the consensus is \"Hold.\" Expedia (EXPE) was rated \"Hold\" by BMO Capital, with an overall \"Moderate Buy\" consensus. Valvoline (VVV) received a \"Buy\" from Piper Sandler, aligning with a \"Moderate Buy\" consensus.",
+            "banner_image": "https://www.theglobeandmail.com/resizer/v2/CO35VZ4BCFF3NIEHU4WVTTK22I.jpg?auth=ffcb80f53a98eab9aef66f1654a7c2aaffdaca4913c4e9342886fc2f642d512c&width=300&height=200&quality=80&focal=2828%2C1991",
+            "source": "The Globe and Mail",
+            "category_within_source": "General",
+            "source_domain": "The Globe and Mail",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.919749"
+                },
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.807208"
+                },
+                {
+                    "topic": "retail_wholesale",
+                    "relevance_score": "0.628455"
+                },
+                {
+                    "topic": "energy_transportation",
+                    "relevance_score": "0.611759"
+                }
+            ],
+            "overall_sentiment_score": 0.258679,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "VVV",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.407474",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.930997",
+                    "ticker_sentiment_score": "0.220453",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "EXPE",
+                    "relevance_score": "0.863451",
+                    "ticker_sentiment_score": "0.073436",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Future of Solar Panel Market 2026 | Market is set to reach US$ 901.9",
+            "url": "https://www.openpr.com/news/4487260/future-of-solar-panel-market-2026-market-is-set-to-reach-us-901-9",
+            "time_published": "20260424T110844",
+            "authors": [],
+            "summary": "The global solar panel market is projected to reach US$ 901.9 million by 2033, growing at an 18.5% CAGR from US$ 274.8 million in 2025, driven primarily by the Asia Pacific region. Key factors include net-zero targets, falling module costs, technological advancements, government incentives, and the expansion of utility-scale projects. Major players like Jinko Solar, Trina Solar, and Canadian Solar are leading this growth with innovations and strategic expansions.",
+            "banner_image": "https://cdn.open-pr.com/L/4/L424784433_g.jpg",
+            "source": "openPR.com",
+            "category_within_source": "General",
+            "source_domain": "openPR.com",
+            "topics": [
+                {
+                    "topic": "energy_transportation",
+                    "relevance_score": "0.918465"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.809729"
+                },
+                {
+                    "topic": "economy_macro",
+                    "relevance_score": "0.706854"
+                }
+            ],
+            "overall_sentiment_score": 0.338207,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "CSIQ",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.447582",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "FSLR",
+                    "relevance_score": "0.733447",
+                    "ticker_sentiment_score": "0.414737",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "NEE",
+                    "relevance_score": "0.612667",
+                    "ticker_sentiment_score": "0.322069",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "ENPH",
+                    "relevance_score": "0.635636",
+                    "ticker_sentiment_score": "0.335331",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.643525",
+                    "ticker_sentiment_score": "0.222264",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Paolino Properties Announces Sale of Tesla-Leased Property for $14M in Providence\u2019s South End",
+            "url": "https://www.golocalprov.com/business/paolino-properties-announces-sale-of-tesla-leased-property-for-14m-in-providences-south-end",
+            "time_published": "20260424T110829",
+            "authors": [
+                "GoLocalProv Business Team"
+            ],
+            "summary": "Paolino Properties has sold its Tesla-leased property at 333 Adelaide Avenue in Providence, Rhode Island, for over $14 million to MDC Coast 25, LLC. CEO Joseph Paolino stated that bringing Tesla to the South End was instrumental in revitalizing the neighborhood. This sale continues Paolino Properties' strategy of impactful real estate development, following another major sale to the City of Providence in 2025.",
+            "banner_image": "https://mediagolocalprov.imgix.net/Paolino_at_Case_Mead.jpg?auto=format%2Ccompress&fit=clip&fp-x=0.5&fp-y=0.5&ixlib=php-4.1.0&q=100&w=360",
+            "source": "Go Local Prov",
+            "category_within_source": "General",
+            "source_domain": "Go Local Prov",
+            "topics": [
+                {
+                    "topic": "real_estate",
+                    "relevance_score": "1.000000"
+                },
+                {
+                    "topic": "retail_wholesale",
+                    "relevance_score": "0.709913"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.625544"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.638082"
+                },
+                {
+                    "topic": "energy_transportation",
+                    "relevance_score": "0.600923"
+                }
+            ],
+            "overall_sentiment_score": 0.346045,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.916356",
+                    "ticker_sentiment_score": "0.323223",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "The Tech Download: How Apple's new chief could shake things up",
+            "url": "https://www.cnbc.com/2026/04/24/the-tech-download-how-apples-new-chief-could-shake-things-up.html",
+            "time_published": "20260424T105959",
+            "authors": [
+                "Kai Nicol-Schwarz"
+            ],
+            "summary": "Apple announced that Tim Cook will step down as CEO, with John Ternus, Senior Vice President of Hardware Engineering, taking over in September. Cook will remain involved as executive chairman, focusing on policymaker engagement. This leadership change signals Apple's continued focus on its internal innovation, functional management, and integrated product strategy, particularly in hardware and AI.",
+            "banner_image": "https://image.cnbcfm.com/api/v1/image/108252159-1768390917044-The_Tech_Download_Section_Header_02.png?v=1768390925&h=80",
+            "source": "CNBC",
+            "category_within_source": "General",
+            "source_domain": "CNBC",
+            "topics": [
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.909458"
+                },
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.740787"
+                }
+            ],
+            "overall_sentiment_score": 0.057124,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.974343",
+                    "ticker_sentiment_score": "0.275650",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.620167",
+                    "ticker_sentiment_score": "-0.308367",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "MSFT",
+                    "relevance_score": "0.555611",
+                    "ticker_sentiment_score": "0.115562",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.572802",
+                    "ticker_sentiment_score": "0.147199",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "GOOGL",
+                    "relevance_score": "0.579358",
+                    "ticker_sentiment_score": "0.027387",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "'Intel is now a very different company' says CEO, as strong financial results strike a defiant tone",
+            "url": "https://www.pcgamer.com/hardware/processors/this-is-a-fundamentally-different-company-today-intel-reports-strong-financial-results-says-its-upcoming-14a-process-is-already-outpacing-early-18a-yields/",
+            "time_published": "20260424T103750",
+            "authors": [
+                "Andy Edser"
+            ],
+            "summary": "Intel CEO Lip-Bu Tan announced strong first-quarter 2026 financial results, emphasizing that Intel is now a \"fundamentally different company\" focused on scaling manufacturing capacity to meet high demand. The company reported $13.6 billion in revenue, with AI-driven businesses contributing 60% and growing 40% year-over-year. Intel's upcoming 14A process is also reportedly outpacing early 18A yields, and a partnership with Tesla to produce AI chips using 14A is expected to significantly boost Intel's foundry business.",
+            "banner_image": "https://cdn.mos.cms.futurecdn.net/qQLbHP4eCmjhabBf8iwpFH.jpg",
+            "source": "PC Gamer",
+            "category_within_source": "General",
+            "source_domain": "PC Gamer",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.903865"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.823470"
+                }
+            ],
+            "overall_sentiment_score": 0.250369,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.462118",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.700406",
+                    "ticker_sentiment_score": "0.315597",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.609210",
+                    "ticker_sentiment_score": "0.117573",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "AMD",
+                    "relevance_score": "0.577367",
+                    "ticker_sentiment_score": "0.138636",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "M&T Bank Corp Purchases 135,385 Shares of Grand Canyon Education, Inc. $LOPE",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-mt-bank-corp-purchases-135385-shares-of-grand-canyon-education-inc-lope-2026-04-24/",
+            "time_published": "20260424T100908",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "M&T Bank Corp significantly increased its stake in Grand Canyon Education, Inc. by purchasing an additional 135,385 shares, bringing its total ownership to 138,077 shares valued at approximately $22.96 million. This move comes after Grand Canyon Education beat Q4 earnings and revenue estimates, with analysts maintaining a \"Moderate Buy\" rating and a target price of $220. Other institutional investors also adjusted their holdings, with the stock currently trading near $165.04.",
+            "banner_image": "https://www.marketbeat.com/logos/grand-canyon-education-inc-logo-1200x675.png?v=20221117163219",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.930426"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.820275"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.706255"
+                }
+            ],
+            "overall_sentiment_score": 0.346425,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "LOPE",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.443871",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "MTB",
+                    "relevance_score": "0.732785",
+                    "ticker_sentiment_score": "0.336953",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "AMD",
+                    "relevance_score": "0.629946",
+                    "ticker_sentiment_score": "0.364297",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "GOOGL",
+                    "relevance_score": "0.557791",
+                    "ticker_sentiment_score": "0.306213",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.592740",
+                    "ticker_sentiment_score": "0.316975",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Analysts Have Conflicting Sentiments on These Consumer Cyclical Companies: Lululemon Athletica (LULU), Tesla (TSLA) and Amazon (AMZN)",
+            "url": "https://www.theglobeandmail.com/investing/markets/stocks/AMZN-Q/pressreleases/1493958/analysts-have-conflicting-sentiments-on-these-consumer-cyclical-companies-lululemon-athletica-lulu-tesla-tsla-and-amazon-amzn/",
+            "time_published": "20260424T084009",
+            "authors": [
+                "Tipranks"
+            ],
+            "summary": "Analysts are issuing varied ratings for key consumer cyclical companies. Lululemon Athletica and Tesla both received \"Hold\" ratings with modest upside potential, while Amazon was given a \"Buy\" rating with a more significant expected upside. These ratings reflect differing expert opinions on the near-term performance of these prominent stocks.",
+            "banner_image": "https://www.theglobeandmail.com/resizer/v2/CO35VZ4BCFF3NIEHU4WVTTK22I.jpg?auth=ffcb80f53a98eab9aef66f1654a7c2aaffdaca4913c4e9342886fc2f642d512c&width=300&height=200&quality=80&focal=2828%2C1991",
+            "source": "The Globe and Mail",
+            "category_within_source": "General",
+            "source_domain": "The Globe and Mail",
+            "topics": [
+                {
+                    "topic": "retail_wholesale",
+                    "relevance_score": "0.849337"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.937719"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.704070"
+                }
+            ],
+            "overall_sentiment_score": 0.042327,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "BRCB",
+                    "relevance_score": "0.343775",
+                    "ticker_sentiment_score": "0.016304",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "LULU",
+                    "relevance_score": "0.956505",
+                    "ticker_sentiment_score": "-0.146997",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.982907",
+                    "ticker_sentiment_score": "-0.116156",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "AMZN",
+                    "relevance_score": "0.932679",
+                    "ticker_sentiment_score": "0.258570",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Musk Says Tesla Has Begun Production of Its Cybercab Robotaxi",
+            "url": "https://www.bloomberg.com/news/articles/2026-04-24/musk-says-tesla-has-begun-production-of-its-cybercab-robotaxi",
+            "time_published": "20260424T084000",
+            "authors": [
+                "Chester Dawson"
+            ],
+            "summary": "Elon Musk announced on social media site X that Tesla has started manufacturing its Cybercab robotaxi. This launch comes as Tesla faces a slump in global sales and fulfills a long-standing promise for the electric-vehicle maker. The Cybercab is intended to be a part of Tesla's Robotaxi network, operating with a mix of autonomous vehicles and those with human safety monitors.",
+            "banner_image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iyhaGS9CPWuw/v1/-1x-1.webp",
+            "source": "Bloomberg",
+            "category_within_source": "General",
+            "source_domain": "Bloomberg",
+            "topics": [
+                {
+                    "topic": "energy_transportation",
+                    "relevance_score": "0.934766"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.835442"
+                },
+                {
+                    "topic": "manufacturing",
+                    "relevance_score": "0.737043"
+                }
+            ],
+            "overall_sentiment_score": 0.397496,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.412257",
+                    "ticker_sentiment_label": "Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Analysts Offer Insights on Consumer Cyclical Companies: Tractor Supply (TSCO) and Tesla (TSLA)",
+            "url": "https://www.theglobeandmail.com/investing/markets/stocks/TSCO/pressreleases/1492292/analysts-offer-insights-on-consumer-cyclical-companies-tractor-supply-tsco-and-tesla-tsla/",
+            "time_published": "20260424T063836",
+            "authors": [
+                "Tipranks"
+            ],
+            "summary": "Mizuho Securities maintained a Buy rating on Tractor Supply (TSCO) with a $50.00 price target, while Jefferies reiterated a Hold rating on Tesla (TSLA) with a target of $350.00. The analyst consensus for Tractor Supply is a Moderate Buy with a 26.8% upside, and for Tesla, it is a Hold with a 6.1% upside. The article details recent analyst updates for both consumer cyclical companies.",
+            "banner_image": null,
+            "source": "The Globe and Mail",
+            "category_within_source": "General",
+            "source_domain": "The Globe and Mail",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.903416"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.829867"
+                },
+                {
+                    "topic": "retail_wholesale",
+                    "relevance_score": "0.709948"
+                },
+                {
+                    "topic": "energy_transportation",
+                    "relevance_score": "0.740642"
+                }
+            ],
+            "overall_sentiment_score": -0.095052,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "TSCO",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "-0.188422",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.726734",
+                    "ticker_sentiment_score": "0.090508",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Analysts Offer Insights on Consumer Cyclical Companies: Tractor Supply (TSCO) and Tesla (TSLA)",
+            "url": "https://www.theglobeandmail.com/investing/markets/markets-news/Tipranks/1492292/analysts-offer-insights-on-consumer-cyclical-companies-tractor-supply-tsco-and-tesla-tsla/",
+            "time_published": "20260424T062143",
+            "authors": [
+                "Tipranks"
+            ],
+            "summary": "This article provides an analysis of two consumer cyclical companies, Tractor Supply (TSCO) and Tesla (TSLA), based on recent analyst ratings. Mizuho Securities maintained a Buy rating for Tractor Supply with a $50.00 price target, while Jefferies maintained a Hold rating for Tesla with a price target of $350.00. The article also includes the current analyst consensus and price targets for both stocks, noting a potential upside for each.",
+            "banner_image": null,
+            "source": "The Globe and Mail",
+            "category_within_source": "General",
+            "source_domain": "The Globe and Mail",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.939078"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.804891"
+                },
+                {
+                    "topic": "retail_wholesale",
+                    "relevance_score": "0.716096"
+                },
+                {
+                    "topic": "energy_transportation",
+                    "relevance_score": "0.601046"
+                }
+            ],
+            "overall_sentiment_score": 0.168404,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "TSCO",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.297032",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.897319",
+                    "ticker_sentiment_score": "0.045812",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Elon Musk vs. Plug Power Stock: Here's What the CEO of Tesla Thinks About Hydrogen Energy",
+            "url": "https://www.theglobeandmail.com/investing/markets/stocks/NVDA/pressreleases/1490554/elon-musk-vs-plug-power-stock-heres-what-the-ceo-of-tesla-thinks-about-hydrogen-energy/",
+            "time_published": "20260424T023930",
+            "authors": [
+                "Motley Fool"
+            ],
+            "summary": "This article explores Elon Musk's views on hydrogen energy, particularly in relation to companies like Plug Power. Musk has repeatedly expressed skepticism about hydrogen fuel for transportation, favoring lithium-ion batteries. The piece also discusses the high cost of hydrogen fuel compared to traditional and other renewable energy sources, concluding that its widespread viability is years away and companies like Plug Power are reliant on government subsidies.",
+            "banner_image": "https://barchart-news-media-prod.aws.barchart.com/FC/4c19a448e0045ca68a5e6079dd0fdccd/%3Furl%3Dhttps%253a%252f%252fg.foolcdn.com%252feditorial%252fimages%252f865943%252fgettyimages-1407030939-1200x675-128554e.jpg%26amp%3Bw%3D700",
+            "source": "The Globe and Mail",
+            "category_within_source": "General",
+            "source_domain": "The Globe and Mail",
+            "topics": [
+                {
+                    "topic": "energy_transportation",
+                    "relevance_score": "0.942707"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.834701"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.719389"
+                }
+            ],
+            "overall_sentiment_score": -0.081687,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "PLUG",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "-0.426034",
+                    "ticker_sentiment_label": "Bearish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.717239",
+                    "ticker_sentiment_score": "0.139238",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.607600",
+                    "ticker_sentiment_score": "0.121313",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "$Tesla (TSLA.US)$ $Tradr 2X Short TSLA Daily ETF (TSLQ.US)$ still holding.",
+            "url": "http://www.moomoo.com/community/feed/tesla-tsla-us-tradr-2x-short-tsla-daily-etf-tslq-116454037520390",
+            "time_published": "20260424T023920",
+            "authors": [
+                "|NULL"
+            ],
+            "summary": "The article is a brief post from the moomoo Community, indicating a user named RT1M is still holding positions in Tesla (TSLA.US) and Tradr 2X Short TSLA Daily ETF (TSLQ.US). The post is accompanied by an image and has some engagement metrics like views and comments. It also includes a disclaimer that the community content is for educational purposes.",
+            "banner_image": "https://sgsnsimg.moomoo.com/sns_client_feed/102251056/20260423/1776947593486-random788-102251056-android-org.png/bigmoo?imageMogr2/ignore-error/1/format/webp",
+            "source": "Moomoo",
+            "category_within_source": "General",
+            "source_domain": "Moomoo",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.923854"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.834561"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.723034"
+                },
+                {
+                    "topic": "energy_transportation",
+                    "relevance_score": "0.606918"
+                }
+            ],
+            "overall_sentiment_score": 0.239737,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "TSLQ",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.121509",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.924508",
+                    "ticker_sentiment_score": "0.340116",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Things Are Finally Looking Up for Intel and It Has CPUs to Thank for It",
+            "url": "https://gizmodo.com/things-are-finally-looking-up-for-intel-and-it-has-cpus-to-thank-for-it-2000750198",
+            "time_published": "20260424T013748",
+            "authors": [
+                "Ece Yildirim"
+            ],
+            "summary": "Intel is experiencing a resurgence, reporting a 7.2% revenue increase and attributing much of its recent success to a growing demand for Central Processing Units (CPUs). This shift is fueled by the rise of \"agentic AI\" systems, which require CPUs for orchestration, control plane, and data management tasks, indicating a potential renaissance for these chips in the AI era. Industry experts and even Nvidia executives are acknowledging a shift in the AI bottleneck from GPUs to CPUs.",
+            "banner_image": "https://gizmodo.com/app/uploads/2026/04/GettyImages-2264783445.jpg",
+            "source": "Gizmodo",
+            "category_within_source": "General",
+            "source_domain": "Gizmodo",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.936323"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "1.000000"
+                },
+                {
+                    "topic": "economy_macro",
+                    "relevance_score": "0.621349"
+                }
+            ],
+            "overall_sentiment_score": 0.244414,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.465015",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.876065",
+                    "ticker_sentiment_score": "0.307545",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "AMD",
+                    "relevance_score": "0.724316",
+                    "ticker_sentiment_score": "0.221803",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "MS",
+                    "relevance_score": "0.628991",
+                    "ticker_sentiment_score": "0.131293",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.579311",
+                    "ticker_sentiment_score": "0.099869",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Bay Area Tesla owner files lawsuit against company over \u2018self-driving' car promises",
+            "url": "https://www.nbcbayarea.com/news/local/bay-area-tesla-owner-lawsuit-self-driving-car/4073874/",
+            "time_published": "20260424T010927",
+            "authors": [
+                "Scott Budman"
+            ],
+            "summary": "A Bay Area Tesla owner has filed a lawsuit against the company, alleging that it has not delivered on its \"self-driving\" car promises. The owner, Tom Losavia, spent $100,000 on a Model S and an additional $8,000 for the self-driving software package but claims the technology is not fully self-driving, nine years after his purchase. He is seeking a refund for the software and an order to prevent Tesla from marketing its software as self-driving, pointing to similar lawsuits globally.",
+            "banner_image": "https://media.nbcbayarea.com/2026/04/47672907989-1080pnbcstations.jpg?quality=85&strip=all",
+            "source": "NBC Bay Area",
+            "category_within_source": "General",
+            "source_domain": "NBC Bay Area",
+            "topics": [
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.823601"
+                }
+            ],
+            "overall_sentiment_score": -0.403176,
+            "overall_sentiment_label": "Bearish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "-0.434435",
+                    "ticker_sentiment_label": "Bearish"
+                }
+            ]
+        },
+        {
+            "title": "Arm Holdings CFO Jason Child sells $3.83 million in shares",
+            "url": "https://www.investing.com/news/insider-trading-news/arm-holdings-cfo-jason-child-sells-383-million-in-shares-93CH-4634222",
+            "time_published": "20260423T214020",
+            "authors": [
+                "Investing.com"
+            ],
+            "summary": "Jason Child, the Chief Financial Officer of Arm Holdings PLC (NASDAQ:ARM), sold 21,280 ordinary shares for a total of $3.83 million at $180.0 per share on April 22, 2026. This transaction was executed under a Rule 10b5-1 trading plan adopted in May 2025. Following the sale, Child directly holds 153,426 ordinary shares, while the company's stock has seen an 80% surge year-to-date, despite being considered overvalued by InvestingPro analysis.",
+            "banner_image": "https://i-invdn-com.investing.com/news/news_six_pile_69x52._800x533_L_1419494215.jpg",
+            "source": "Investing.com",
+            "category_within_source": "General",
+            "source_domain": "Investing.com",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.911521"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.828647"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.723848"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.849178"
+                }
+            ],
+            "overall_sentiment_score": -0.169146,
+            "overall_sentiment_label": "Somewhat-Bearish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "ARM",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "-0.206937",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "NOW",
+                    "relevance_score": "0.616599",
+                    "ticker_sentiment_score": "-0.308295",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "0.619750",
+                    "ticker_sentiment_score": "0.205306",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.611504",
+                    "ticker_sentiment_score": "-0.322308",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.611125",
+                    "ticker_sentiment_score": "-0.232828",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                }
+            ]
+        },
+        {
+            "title": "Target Hospitality completes 8.05M share secondary offering By Investing.com",
+            "url": "https://ca.investing.com/news/company-news/target-hospitality-completes-805m-share-secondary-offering-93CH-4584393",
+            "time_published": "20260423T213923",
+            "authors": [
+                "Investing.com"
+            ],
+            "summary": "Target Hospitality (NASDAQ:TH) has completed a secondary offering of 8.05 million shares of common stock at $14.00 per share, with the proceeds going to selling entities controlled by TDR Capital LLP, not the company itself. The offering included an additional 1.05 million shares from the underwriters' option. This follows recent news of a significant contract secured by Target Hospitality for hyperscaler accommodations, leading to increased price targets from analysts.",
+            "banner_image": "https://i-invdn-com.investing.com/news/LYNXMPEB59082_L.jpg",
+            "source": "Investing.com Canada",
+            "category_within_source": "General",
+            "source_domain": "Investing.com Canada",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.926333"
+                }
+            ],
+            "overall_sentiment_score": -0.162537,
+            "overall_sentiment_label": "Somewhat-Bearish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "TH",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.004587",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "MS",
+                    "relevance_score": "0.612046",
+                    "ticker_sentiment_score": "0.001321",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.626969",
+                    "ticker_sentiment_score": "-0.394774",
+                    "ticker_sentiment_label": "Bearish"
+                }
+            ]
+        },
+        {
+            "title": "Why Is Gorman-Rupp (GRC) Stock Rocketing Higher Today",
+            "url": "https://stockstory.org/us/stocks/nyse/grc/news/why-up-down/why-is-gorman-rupp-grc-stock-rocketing-higher-today",
+            "time_published": "20260423T210921",
+            "authors": [
+                "Anthony Lee"
+            ],
+            "summary": "Shares of Gorman-Rupp (GRC) surged 11.1% following strong first-quarter 2026 financial results, which significantly surpassed analyst expectations for both revenue and profit. The company reported earnings of $0.68 per share and revenue of $176.6 million, alongside meaningful margin expansion and a growing order backlog. This positive performance led to the stock setting a new 52-week high, despite a recent dip related to broader market shifts away from defensive stocks.",
+            "banner_image": "https://stockstory.org/stockstory/company-image/GRC?size=1000x500",
+            "source": "StockStory",
+            "category_within_source": "General",
+            "source_domain": "StockStory",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.927990"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.836394"
+                },
+                {
+                    "topic": "manufacturing",
+                    "relevance_score": "0.710664"
+                },
+                {
+                    "topic": "economy_macro",
+                    "relevance_score": "0.606955"
+                }
+            ],
+            "overall_sentiment_score": 0.372531,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "GRC",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.646410",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "AVGO",
+                    "relevance_score": "0.626606",
+                    "ticker_sentiment_score": "0.285824",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.597383",
+                    "ticker_sentiment_score": "0.207257",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Comcast Corp Stock (CMCSA) Closed Up by 7.71% on Apr 23: Facts Behind the Movement",
+            "url": "https://www.tradingkey.com/news/market-movers/261817690-market-movers-cmcsa-20260423",
+            "time_published": "20260423T201400",
+            "authors": [
+                "TradingKey"
+            ],
+            "summary": "Comcast Corp (CMCSA) stock rose by 7.71% on April 23, driven by better-than-expected Q1 2026 adjusted EPS and revenue. Strong performance in its Media segment due to major sporting events and record wireless additions contributed to the positive results. The company also highlighted its robust free cash flow generation and commitment to returning capital to shareholders, despite ongoing challenges in residential broadband subscriber losses and increased losses in its Peacock streaming service.",
+            "banner_image": "https://resource.tradingkey.com/cdn/images/logo/web-logo-dark.png",
+            "source": "TradingKey",
+            "category_within_source": "General",
+            "source_domain": "TradingKey",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.906547"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.817361"
+                }
+            ],
+            "overall_sentiment_score": 0.301363,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "CCZ",
+                    "relevance_score": "0.313759",
+                    "ticker_sentiment_score": "0.047279",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CMCSA",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.496530",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "TMUS",
+                    "relevance_score": "0.642721",
+                    "ticker_sentiment_score": "0.349185",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "0.742656",
+                    "ticker_sentiment_score": "0.417822",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.629854",
+                    "ticker_sentiment_score": "0.221151",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "BofA raises Dover stock price target to $274 on strong bookings",
+            "url": "https://www.investing.com/news/analyst-ratings/bofa-raises-dover-stock-price-target-to-274-on-strong-bookings-93CH-4633821",
+            "time_published": "20260423T200725",
+            "authors": [
+                "Investing.com"
+            ],
+            "summary": "BofA Securities has raised its price target for Dover Corp. (NYSE:DOV) to $274 from $240, while maintaining a Buy rating on the stock, citing strong bookings growth and capacity expansion. The company's first-quarter 2026 adjusted EPS exceeded expectations, and its dividend has been consistently raised for 55 years. InvestingPro analysis suggests the stock might be trading above its Fair Value.",
+            "banner_image": "https://i-invdn-com.investing.com/news/news_six_pile_69x52._800x533_L_1419494215.jpg",
+            "source": "Investing.com",
+            "category_within_source": "General",
+            "source_domain": "Investing.com",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.917512"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.828949"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.746651"
+                },
+                {
+                    "topic": "manufacturing",
+                    "relevance_score": "0.628023"
+                }
+            ],
+            "overall_sentiment_score": -0.060061,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "DOV",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.479460",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "MSFT",
+                    "relevance_score": "0.550393",
+                    "ticker_sentiment_score": "0.048201",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.551692",
+                    "ticker_sentiment_score": "-0.196238",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.516281",
+                    "ticker_sentiment_score": "-0.138128",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "NOW",
+                    "relevance_score": "0.557460",
+                    "ticker_sentiment_score": "-0.442805",
+                    "ticker_sentiment_label": "Bearish"
+                }
+            ]
+        }
+    ]
+}
