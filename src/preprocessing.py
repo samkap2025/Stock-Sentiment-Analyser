@@ -334,16 +334,11 @@ class StockDataPreprocessor:
 
     def create_target_variable(self):
         """
-        Create binary target variable for classification:
-        - 1: Stock price goes UP (close > close_previous_day)
-        - 0: Stock price goes DOWN (close <= close_previous_day)
+        Create 3-day forward target:
+        1 -> stock expected to rise over next 3 trading days
+        0 -> stock expected to fall / remain flat
 
-        The target is SHIFTED so that we predict TOMORROW's movement using TODAY's data.
-
-        Returns:
-        --------
-        pd.DataFrame
-            Stock data with target variable
+        This is more stable than next-day prediction.
         """
         if self.stock_df is None:
             print("✗ Error: Stock data not loaded. Call load_stock_data() first.")
@@ -353,38 +348,35 @@ class StockDataPreprocessor:
 
         df = self.stock_df.copy()
 
-        # Calculate daily returns
+        # Daily return
         df['daily_return'] = df['close'].pct_change()
 
-        # Create binary target: 1 if UP, 0 if DOWN
-        # This represents what HAPPENED on that day
-        df['target_actual'] = (df['daily_return'] > 0).astype(int)
+        # 3-day future return
+        df['future_return_3d'] = (
+            df['close'].shift(-3) / df['close'] - 1
+        )
 
-        # Shift target UP by 1 row so that:
-        # Row N's features predict Row N+1's movement
-        # This ensures we're predicting TOMORROW using TODAY's data
-        df['target'] = df['target_actual'].shift(-1)
+        # Binary target
+        df['target'] = (df['future_return_3d'] > 0).astype(int)
 
-        # Drop the last row (it has no target value for tomorrow)
-        df = df[:-1]
+        # remove rows without future data
+        df = df.dropna(subset=['future_return_3d'])
 
-        # Drop the temporary column
-        df = df.drop('target_actual', axis=1)
+        # drop helper column
+        df = df.drop('future_return_3d', axis=1)
 
         self.stock_df = df
 
-        # Print target distribution
         target_counts = df['target'].value_counts()
-        print(f"✓ Target variable created")
-        print(f"  - UP (1): {target_counts.get(1, 0)} days")
-        print(f"  - DOWN (0): {target_counts.get(0, 0)} days")
-        print(f"  - Missing (NaN): {df['target'].isna().sum()} days")
 
-        # Calculate percentage
-        total_valid = target_counts.get(1, 0) + target_counts.get(0, 0)
+        print("✓ Target variable created (3-day forward prediction)")
+        print(f"  - UP (1): {target_counts.get(1,0)} days")
+        print(f"  - DOWN (0): {target_counts.get(0,0)} days")
+
+        total_valid = target_counts.sum()
         if total_valid > 0:
-            up_pct = (target_counts.get(1, 0) / total_valid) * 100
-            print(f"  - Class balance: {up_pct:.2f}% UP, {100 - up_pct:.2f}% DOWN")
+            up_pct = target_counts.get(1, 0) / total_valid * 100
+            print(f"  - Class balance: {up_pct:.2f}% UP, {100-up_pct:.2f}% DOWN")
 
         return self.stock_df
 

@@ -60,14 +60,39 @@ class FeatureEngineer:
         return df
 
     def add_price_features(self):
-        """Add price-based features"""
+        """Add price-based + lag features"""
         print("Adding price features...")
         df = self.df
 
+        # basic price features
         df['daily_return'] = df['close'].pct_change()
         df['price_change'] = df['close'] - df['open']
         df['hl_spread'] = (df['high'] - df['low']) / df['close']
         df['volume_change'] = df['volume'].pct_change()
+
+        # lag returns
+        df['return_lag1'] = df['daily_return'].shift(1)
+        df['return_lag3'] = df['close'].pct_change(3)
+        df['return_lag7'] = df['close'].pct_change(7)
+
+        # momentum
+        df['momentum_3'] = df['close'] - df['close'].shift(3)
+        df['momentum_7'] = df['close'] - df['close'].shift(7)
+
+        # volatility
+        df['volatility_5'] = df['daily_return'].rolling(5).std()
+        df['volatility_10'] = df['daily_return'].rolling(10).std()
+
+        # volume trend
+        df['volume_ma5'] = df['volume'].rolling(5).mean()
+        df['volume_ratio'] = df['volume'] / df['volume_ma5']
+
+        # sentiment lag features
+        if 'sentiment_score' in df.columns:
+            df['sentiment_lag1'] = df['sentiment_score'].shift(1)
+            df['sentiment_ma3'] = df['sentiment_score'].rolling(3).mean()
+            df['sentiment_ma7'] = df['sentiment_score'].rolling(7).mean()
+            df['sentiment_change'] = df['sentiment_score'].diff()
 
         print("✓ Price features added")
         return df

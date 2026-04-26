@@ -3,29 +3,51 @@ import numpy as np
 
 def generate_trading_signals(df, predictions, sentiment_scores):
     """
-    Generate trading signals using model prediction + sentiment score
+    Generate balanced trading signals
     """
     df_signals = df.copy()
     df_signals["prediction"] = predictions
     df_signals["signal"] = "HOLD"
 
-    # convert to numpy
     if not isinstance(sentiment_scores, np.ndarray):
         sentiment_scores = np.array(sentiment_scores)
 
-    # BUY / SELL
-    buy_condition = (predictions == 1) & (sentiment_scores > 0.0)
-    sell_condition = (predictions == 0) & (sentiment_scores < 0.0)
+    # normalize sentiment
+    sentiment_scores = np.nan_to_num(sentiment_scores)
 
-    df_signals.loc[buy_condition, "signal"] = "BUY"
-    df_signals.loc[sell_condition, "signal"] = "SELL"
+    # BUY logic
+    buy = (
+        (predictions == 1) &
+        (sentiment_scores >= -0.05)
+    )
 
-    # Strong signals
-    strong_buy = (predictions == 1) & (sentiment_scores > 0.25)
-    strong_sell = (predictions == 0) & (sentiment_scores < -0.25)
+    # SELL logic
+    sell = (
+        (predictions == 0) &
+        (sentiment_scores <= 0.05)
+    )
+
+    df_signals.loc[buy, "signal"] = "BUY"
+    df_signals.loc[sell, "signal"] = "SELL"
+
+    # strong buy
+    strong_buy = (
+        (predictions == 1) &
+        (sentiment_scores > 0.20)
+    )
+
+    # strong sell
+    strong_sell = (
+        (predictions == 0) &
+        (sentiment_scores < -0.20)
+    )
 
     df_signals.loc[strong_buy, "signal"] = "STRONG_BUY"
     df_signals.loc[strong_sell, "signal"] = "STRONG_SELL"
+
+    # uncertain cases
+    uncertain = np.abs(sentiment_scores) < 0.03
+    df_signals.loc[uncertain, "signal"] = "HOLD"
 
     return df_signals
 
