@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69924465-0a87-471a-be59-418554d636f2" name="Changes" comment="add preprocessing">
-      <change afterPath="$PROJECT_DIR$/src/feature_engineering.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model_training.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sentiment_analysis.py" afterDir="false" />
+    <list default="true" id="69924465-0a87-471a-be59-418554d636f2" name="Changes" comment="add feature eng, sentiment analysis, model training">
+      <change afterPath="$PROJECT_DIR$/src/backtesting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ensemble_prediction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model_evaluation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/trading_signals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visualisation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,12 +79,32 @@
       <option name="project" value="LOCAL" />
       <updated>1777190239725</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add feature eng, sentiment analysis, model training">
+      <option name="closed" value="true" />
+      <created>1777191897837</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1777191897837</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="add preprocessing" />
-    <option name="LAST_COMMIT_MESSAGE" value="add preprocessing" />
+    <MESSAGE value="add feature eng, sentiment analysis, model training" />
+    <option name="LAST_COMMIT_MESSAGE" value="add feature eng, sentiment analysis, model training" />
   </component>
 </project>
