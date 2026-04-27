@@ -30,3 +30,4 @@ nltk~=3.9.4
 textblob~=0.20.0
 xgboost~=3.2.0
 matplotlib~=3.10.9
+pandas-ta

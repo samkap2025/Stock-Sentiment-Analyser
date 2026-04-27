@@ -1,21 +1,15 @@
 import numpy as np
-import pandas as pd
 
 
 def simple_backtest(df):
-    """
-    Simple backtest of trading strategy
-    """
     df_backtest = df.copy()
 
-    # Convert signals to positions
     df_backtest['position'] = 0
     df_backtest.loc[df_backtest['signal'] == 'BUY', 'position'] = 1
     df_backtest.loc[df_backtest['signal'] == 'STRONG_BUY', 'position'] = 1
     df_backtest.loc[df_backtest['signal'] == 'SELL', 'position'] = -1
     df_backtest.loc[df_backtest['signal'] == 'STRONG_SELL', 'position'] = -1
 
-    # lowercase close column
     df_backtest['daily_return'] = df_backtest['close'].pct_change()
 
     df_backtest['strategy_return'] = (

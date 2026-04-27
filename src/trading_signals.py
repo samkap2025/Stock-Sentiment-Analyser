@@ -2,9 +2,7 @@ import numpy as np
 
 
 def generate_trading_signals(df, predictions, sentiment_scores):
-    """
-    Generate balanced trading signals
-    """
+
     df_signals = df.copy()
     df_signals["prediction"] = predictions
     df_signals["signal"] = "HOLD"

@@ -2,21 +2,7 @@ import numpy as np
 
 
 def ensemble_majority_vote(models, X_test):
-    """
-    Ensemble prediction using majority voting
 
-    Parameters:
-    -----------
-    models : dict
-        Dictionary of trained models
-    X_test : array
-        Test features
-
-    Returns:
-    --------
-    array
-        Ensemble predictions (0 or 1)
-    """
     predictions = []
 
     for model_name, model in models.items():
@@ -31,24 +17,6 @@ def ensemble_majority_vote(models, X_test):
 
 
 def ensemble_weighted_average(models, X_test, weights=None):
-    """
-    Ensemble prediction using weighted average of probabilities
-
-    Parameters:
-    -----------
-    models : dict
-        Dictionary of trained models
-    X_test : array
-        Test features
-    weights : dict, optional
-        Model weights {model_name: weight}
-        If None, equal weights used
-
-    Returns:
-    --------
-    array
-        Ensemble predictions (0 or 1)
-    """
     if weights is None:
         # Equal weights for all models
         weights = {k: 1.0 for k in models.keys()}
@@ -74,23 +42,6 @@ def ensemble_weighted_average(models, X_test, weights=None):
 
 
 def ensemble_stacking(models, X_test, meta_model=None):
-    """
-    Ensemble prediction using stacking
-
-    Parameters:
-    -----------
-    models : dict
-        Dictionary of first-level models
-    X_test : array
-        Test features
-    meta_model : sklearn model, optional
-        Meta-learner model
-
-    Returns:
-    --------
-    array
-        Ensemble predictions
-    """
     meta_features = []
 
     for model_name, model in models.items():

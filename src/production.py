@@ -2,7 +2,6 @@ import sys
 
 sys.path.append('src/')
 
-# Import all modules
 from preprocessing import load_stock_data
 from sentiment_analysis import analyze_sentiment_vader
 from feature_engineering import add_technical_indicators

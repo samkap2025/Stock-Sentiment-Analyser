@@ -19,6 +19,7 @@ from src.visualisation import (
     plot_sentiment_trends,
     plot_trading_signals,
     plot_backtest_results,
+    plot_model_comparison
 )
 from src.model_persistence import save_models, save_scaler
 
@@ -130,10 +131,13 @@ def main():
 
     os.makedirs("outputs", exist_ok=True)
 
+    evaluation_results = results
+
     plot_price_trends(final_df)
     plot_sentiment_trends(final_df)
     plot_trading_signals(backtest_df)
     plot_backtest_results(backtest_df)
+    plot_model_comparison(evaluation_results)
 
     print("✓ Plots saved in outputs/")
 

@@ -3,16 +3,6 @@ import os
 
 
 def save_models(models, path='models/'):
-    """
-    Save all trained models to disk
-
-    Parameters:
-    -----------
-    models : dict
-        Dictionary of trained models
-    path : str
-        Directory to save models
-    """
     os.makedirs(path, exist_ok=True)
 
     for model_name, model in models.items():
@@ -26,18 +16,6 @@ def save_models(models, path='models/'):
 
 
 def load_models(path='models/'):
-    """
-    Load all trained models from disk
-
-    Parameters:
-    -----------
-    path : str
-        Directory containing model files
-
-    Returns:
-    --------
-    dict : Loaded models
-    """
     models = {}
 
     if not os.path.exists(path):
@@ -58,16 +36,6 @@ def load_models(path='models/'):
 
 
 def save_scaler(scaler, path='models/scaler.pkl'):
-    """
-    Save feature scaler
-
-    Parameters:
-    -----------
-    scaler : sklearn.preprocessing.StandardScaler
-        Fitted scaler
-    path : str
-        Path to save scaler
-    """
     os.makedirs(os.path.dirname(path), exist_ok=True)
 
     try:
@@ -79,19 +47,6 @@ def save_scaler(scaler, path='models/scaler.pkl'):
 
 
 def load_scaler(path='models/scaler.pkl'):
-    """
-    Load feature scaler
-
-    Parameters:
-    -----------
-    path : str
-        Path to scaler file
-
-    Returns:
-    --------
-    sklearn.preprocessing.StandardScaler or None
-        Loaded scaler
-    """
     if not os.path.exists(path):
         print(f"Scaler file not found: {path}")
         return None

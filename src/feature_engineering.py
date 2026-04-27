@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 import pandas_ta as ta
 from sklearn.preprocessing import StandardScaler
 import warnings
@@ -8,49 +7,39 @@ warnings.filterwarnings('ignore')
 
 
 class FeatureEngineer:
-    """
-    Engineer features for machine learning models
-    """
 
     def __init__(self, df):
         self.df = df.copy()
         self.scaler = None
 
     def add_technical_indicators(self):
-        """Add technical indicators"""
         print("Adding technical indicators...")
         df = self.df
 
-        # Moving averages
         df['SMA_20'] = df['close'].rolling(window=20).mean()
         df['SMA_50'] = df['close'].rolling(window=50).mean()
         df['EMA_12'] = df['close'].ewm(span=12).mean()
         df['EMA_26'] = df['close'].ewm(span=26).mean()
 
-        # RSI
         df['RSI'] = ta.rsi(df['close'], length=14)
 
-        # MACD
         macd_result = ta.macd(df['close'])
         if isinstance(macd_result, pd.DataFrame):
             df['MACD'] = macd_result.iloc[:, 0]
         else:
             df['MACD'] = macd_result
 
-        # ATR
         df['ATR'] = ta.atr(
             df['high'],
             df['low'],
             df['close']
         )
 
-        # Bollinger Bands
         bb_result = ta.bbands(df['close'])
         if isinstance(bb_result, pd.DataFrame):
             df['Bollinger_High'] = bb_result.iloc[:, 0]
             df['Bollinger_Low'] = bb_result.iloc[:, 2]
 
-        # OBV
         df['OBV'] = ta.obv(
             df['close'],
             df['volume']
@@ -64,30 +53,24 @@ class FeatureEngineer:
         print("Adding price features...")
         df = self.df
 
-        # basic price features
         df['daily_return'] = df['close'].pct_change()
         df['price_change'] = df['close'] - df['open']
         df['hl_spread'] = (df['high'] - df['low']) / df['close']
         df['volume_change'] = df['volume'].pct_change()
 
-        # lag returns
         df['return_lag1'] = df['daily_return'].shift(1)
         df['return_lag3'] = df['close'].pct_change(3)
         df['return_lag7'] = df['close'].pct_change(7)
 
-        # momentum
         df['momentum_3'] = df['close'] - df['close'].shift(3)
         df['momentum_7'] = df['close'] - df['close'].shift(7)
 
-        # volatility
         df['volatility_5'] = df['daily_return'].rolling(5).std()
         df['volatility_10'] = df['daily_return'].rolling(10).std()
 
-        # volume trend
         df['volume_ma5'] = df['volume'].rolling(5).mean()
         df['volume_ratio'] = df['volume'] / df['volume_ma5']
 
-        # sentiment lag features
         if 'sentiment_score' in df.columns:
             df['sentiment_lag1'] = df['sentiment_score'].shift(1)
             df['sentiment_ma3'] = df['sentiment_score'].rolling(3).mean()
@@ -98,7 +81,6 @@ class FeatureEngineer:
         return df
 
     def handle_missing_values(self):
-        """Handle missing values"""
         print("Handling missing values...")
         df = self.df
 
@@ -115,7 +97,6 @@ class FeatureEngineer:
         return df
 
     def normalize_features(self):
-        """Normalize only numeric features"""
         print("Normalizing features...")
         df = self.df
 
@@ -144,7 +125,6 @@ class FeatureEngineer:
         return df
 
     def create_all_features(self):
-        """Complete feature engineering pipeline"""
         print("\n" + "=" * 60)
         print("FEATURE ENGINEERING PIPELINE")
         print("=" * 60 + "\n")

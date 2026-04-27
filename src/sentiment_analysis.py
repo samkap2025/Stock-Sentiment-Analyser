@@ -8,7 +8,6 @@ import warnings
 
 warnings.filterwarnings('ignore')
 
-# Fix SSL certificate issue for NLTK downloads
 try:
     _create_unverified_https_context = ssl._create_unverified_context
 except AttributeError:
@@ -16,14 +15,13 @@ except AttributeError:
 else:
     ssl._create_default_https_context = _create_unverified_https_context
 
-# Download required NLTK data (run once)
 try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
     try:
         nltk.download('punkt', quiet=True)
     except Exception as e:
-        pass  # Continue anyway, VADER doesn't strictly need it
+        pass
 
 try:
     nltk.data.find('sentiment/vader_lexicon')
@@ -35,21 +33,7 @@ except LookupError:
 
 
 class SentimentAnalyzer:
-    """
-    Analyzes sentiment from news headlines and creates sentiment features
-    for stock price prediction.
-    """
-
     def __init__(self, method='vader'):
-        """
-        Initialize sentiment analyzer.
-
-        Parameters:
-        -----------
-        method : str
-            Sentiment analysis method: 'vader', 'textblob'
-            Default: 'vader' (recommended for financial text)
-        """
         self.method = method.lower()
         self.sia = None
 
@@ -68,21 +52,6 @@ class SentimentAnalyzer:
             raise ValueError(f"Unknown method: {method}. Use 'vader' or 'textblob'")
 
     def analyze_sentiment_vader(self, text):
-        """
-        Analyze sentiment using VADER (Valence Aware Dictionary and sEntiment Reasoner).
-        Optimized for financial text and social media.
-
-        Parameters:
-        -----------
-        text : str
-            Text to analyze
-
-        Returns:
-        --------
-        tuple : (sentiment_label, sentiment_score)
-            sentiment_label : str ('POSITIVE', 'NEGATIVE', 'NEUTRAL')
-            sentiment_score : float (-1.0 to 1.0)
-        """
         if not isinstance(text, str) or len(text.strip()) == 0:
             return 'NEUTRAL', 0.0
 
@@ -109,21 +78,6 @@ class SentimentAnalyzer:
                 return 'NEUTRAL', 0.0
 
     def analyze_sentiment_textblob(self, text):
-        """
-        Analyze sentiment using TextBlob.
-        Simple and fast method.
-
-        Parameters:
-        -----------
-        text : str
-            Text to analyze
-
-        Returns:
-        --------
-        tuple : (sentiment_label, sentiment_score)
-            sentiment_label : str ('POSITIVE', 'NEGATIVE', 'NEUTRAL')
-            sentiment_score : float (-1.0 to 1.0)
-        """
         if not isinstance(text, str) or len(text.strip()) == 0:
             return 'NEUTRAL', 0.0
 
@@ -143,39 +97,12 @@ class SentimentAnalyzer:
             return 'NEUTRAL', 0.0
 
     def analyze_sentiment(self, text):
-        """
-        Analyze sentiment using the selected method.
-
-        Parameters:
-        -----------
-        text : str
-            Text to analyze
-
-        Returns:
-        --------
-        tuple : (sentiment_label, sentiment_score)
-        """
         if self.method == 'vader':
             return self.analyze_sentiment_vader(text)
         elif self.method == 'textblob':
             return self.analyze_sentiment_textblob(text)
 
     def analyze_news_dataframe(self, news_df, headline_column='headline'):
-        """
-        Analyze sentiment for all headlines in a DataFrame.
-
-        Parameters:
-        -----------
-        news_df : pd.DataFrame
-            DataFrame with news data
-        headline_column : str
-            Name of the column containing headlines
-
-        Returns:
-        --------
-        pd.DataFrame
-            Input DataFrame with added 'sentiment' and 'sentiment_score' columns
-        """
         print(f"\nAnalyzing sentiment for {len(news_df)} articles...")
 
         df = news_df.copy()
@@ -209,21 +136,6 @@ class SentimentAnalyzer:
         return df
 
     def aggregate_daily_sentiment(self, news_df, stock_df):
-        """
-        Aggregate sentiment scores by date and merge with stock data.
-
-        Parameters:
-        -----------
-        news_df : pd.DataFrame
-            News data with 'date', 'sentiment', 'sentiment_score' columns
-        stock_df : pd.DataFrame
-            Stock data with DatetimeIndex
-
-        Returns:
-        --------
-        pd.DataFrame
-            Stock data with added sentiment columns
-        """
         print("\nAggregating daily sentiment...")
 
         df = stock_df.copy()
@@ -286,19 +198,6 @@ class SentimentAnalyzer:
         return df
 
     def add_sentiment_features(self, df):
-        """
-        Create sentiment-based features from daily sentiment scores.
-
-        Parameters:
-        -----------
-        df : pd.DataFrame
-            DataFrame with 'sentiment_score' and 'article_count' columns
-
-        Returns:
-        --------
-        pd.DataFrame
-            DataFrame with added sentiment features
-        """
         print("\nCreating sentiment features...")
 
         df_feat = df.copy()
@@ -345,14 +244,6 @@ class SentimentAnalyzer:
         return df_feat
 
     def get_sentiment_summary(self, news_df):
-        """
-        Print summary statistics of sentiment data.
-
-        Parameters:
-        -----------
-        news_df : pd.DataFrame
-            News data with 'sentiment' and 'sentiment_score' columns
-        """
         print("\n" + "=" * 60)
         print("SENTIMENT SUMMARY")
         print("=" * 60)
@@ -375,23 +266,6 @@ class SentimentAnalyzer:
 
 
 def main(news_df, stock_df, method='vader'):
-    """
-    Main sentiment analysis pipeline.
-
-    Parameters:
-    -----------
-    news_df : pd.DataFrame
-        News data with 'headline' column
-    stock_df : pd.DataFrame
-        Stock data with DatetimeIndex
-    method : str
-        Sentiment analysis method: 'vader' or 'textblob'
-
-    Returns:
-    --------
-    pd.DataFrame
-        Stock data with sentiment features added
-    """
     print("\n" + "=" * 60)
     print("SENTIMENT ANALYSIS PIPELINE")
     print("=" * 60)

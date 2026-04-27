@@ -415,6 +415,24 @@ class StockDataPreprocessor:
         print("[DEBUG] SAMPLE NEWS DATES:", news["date"].head())
 
         # -----------------------------
+        # 2.5 TRIM STOCK TO NEWS RANGE (FIX)
+        # -----------------------------
+        # Remove rows where sentiment doesn't exist
+        news_valid = news[news["sentiment_score"] != 0]
+
+        if len(news_valid) > 0:
+            start_date = news_valid["date"].min()
+            end_date = news_valid["date"].max()
+
+            print(f"\n[FIX] Trimming stock data to: {start_date} → {end_date}")
+
+            df = df[(df.index >= start_date) & (df.index <= end_date)]
+
+            print(f"[FIX] Stock rows after trim: {len(df)}")
+        else:
+            print("[FIX] No valid sentiment data found")
+
+        # -----------------------------
         # 3. CREATE DATE KEY
         # -----------------------------
         df["date_only"] = df.index.floor("D")

@@ -1,23 +1,22 @@
 import matplotlib.pyplot as plt
-import numpy as np
 
 
 def plot_price_trends(df):
     try:
         plt.figure(figsize=(12, 6))
+
         plt.plot(df.index, df['close'], label='Close Price', linewidth=2)
 
-        if 'SMA_20' in df.columns:
-            plt.plot(df.index, df['SMA_20'], label='SMA 20', alpha=0.7)
-
-        if 'SMA_50' in df.columns:
-            plt.plot(df.index, df['SMA_50'], label='SMA 50', alpha=0.7)
+        # ✅ FIXED SMA (computed from raw price)
+        plt.plot(df.index, df['close'].rolling(20).mean(), label='SMA 20', alpha=0.7)
+        plt.plot(df.index, df['close'].rolling(50).mean(), label='SMA 50', alpha=0.7)
 
         plt.title('Stock Price with Moving Averages')
         plt.xlabel('Date')
         plt.ylabel('Price ($)')
         plt.legend()
         plt.grid(True, alpha=0.3)
+
         plt.tight_layout()
         plt.savefig('outputs/price_trends.png', dpi=100)
         plt.close()
