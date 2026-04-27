@@ -29,10 +29,15 @@ def main():
     print("TESLA STOCK PRICE PREDICTOR - COMPLETE PIPELINE")
     print("=" * 80)
 
+    # ============================================================
+    # LOAD DATA
+    # ============================================================
     stock_df = pd.read_csv("data/tsla_stock_raw.csv")
     news_df = pd.read_json("data/tsla_news_raw.json")
 
-    # PREPROCESS
+    # ============================================================
+    # STEP 2: PREPROCESSING
+    # ============================================================
     print("\n" + "=" * 80)
     print("STEP 2: DATA PREPROCESSING")
     print("=" * 80)
@@ -49,7 +54,9 @@ def main():
     processed_df = preprocessor.combined_df
     print(f"\n✓ Preprocessing complete: {len(processed_df)} rows")
 
-    # SENTIMENT
+    # ============================================================
+    # STEP 3: SENTIMENT ANALYSIS
+    # ============================================================
     print("\n" + "=" * 80)
     print("STEP 3: SENTIMENT ANALYSIS")
     print("=" * 80)
@@ -58,7 +65,9 @@ def main():
     news_analyzed = sentiment_analyzer.analyze_news_dataframe(preprocessor.news_df)
     sentiment_analyzer.get_sentiment_summary(news_analyzed)
 
-    # FEATURES
+    # ============================================================
+    # STEP 4: FEATURE ENGINEERING
+    # ============================================================
     print("\n" + "=" * 80)
     print("STEP 4: FEATURE ENGINEERING")
     print("=" * 80)
@@ -66,7 +75,9 @@ def main():
     feature_engineer = FeatureEngineer(processed_df)
     final_df = feature_engineer.create_all_features()
 
-    # TRAIN TEST
+    # ============================================================
+    # STEP 5: DATA PREPARATION
+    # ============================================================
     print("\n" + "=" * 80)
     print("STEP 5: TRAIN TEST SPLIT")
     print("=" * 80)
@@ -74,7 +85,9 @@ def main():
     preparer = DataPreparer(final_df)
     X_train, X_test, y_train, y_test, scaler = preparer.prepare()
 
-    # TRAIN
+    # ============================================================
+    # STEP 6: MODEL TRAINING
+    # ============================================================
     print("\n" + "=" * 80)
     print("STEP 6: MODEL TRAINING")
     print("=" * 80)
@@ -82,7 +95,9 @@ def main():
     trainer = ModelTrainer(X_train, X_test, y_train, y_test)
     models = trainer.train_all()
 
-    # EVAL
+    # ============================================================
+    # STEP 7: MODEL EVALUATION
+    # ============================================================
     print("\n" + "=" * 80)
     print("STEP 7: MODEL EVALUATION")
     print("=" * 80)
@@ -92,28 +107,68 @@ def main():
 
     best_name, best_model, _ = trainer.get_best_model()
 
-    # ENSEMBLE
+    # ============================================================
+    # ENSEMBLE PREDICTION
+    # ============================================================
     ensemble_pred = ensemble_weighted_average(models, X_test)
     confidence = add_confidence_scores(models, X_test)
 
-    # SIGNALS
+    # ============================================================
+    # STEP 8: PREDICTIONS & SIGNALS
+    # ============================================================
     print("\n" + "=" * 80)
-    print("STEP 8: SIGNALS")
+    print("STEP 8: PREDICTIONS & SIGNALS")
     print("=" * 80)
 
     test_df = final_df.iloc[-len(X_test):].copy()
     test_df["confidence"] = confidence
 
     sentiment_scores = test_df["sentiment_score"].values
+
     test_df = generate_trading_signals(
         test_df,
         ensemble_pred,
         sentiment_scores
     )
 
+    # Add prediction columns
+    test_df["prediction"] = ensemble_pred
+
+    # Predicted labels
+    test_df["predicted_direction"] = test_df["prediction"].map({
+        1: "UP",
+        0: "DOWN"
+    })
+
+    # Actual labels (FIXED)
+    actual_labels = np.where(y_test == 1, "UP", "DOWN")
+    test_df["actual_direction"] = actual_labels
+
+    # Prediction summary
+    print("\nPrediction Summary:")
+    print(test_df["predicted_direction"].value_counts())
+
+    # Signal summary
+    print("\nSignal Distribution:")
     print(test_df["signal"].value_counts())
 
-    # BACKTEST
+    # Sample predictions
+    print("\nSample Predictions:")
+    print(
+        test_df[
+            [
+                "actual_direction",
+                "predicted_direction",
+                "sentiment_score",
+                "confidence",
+                "signal"
+            ]
+        ].head(20)
+    )
+
+    # ============================================================
+    # STEP 9: BACKTEST
+    # ============================================================
     print("\n" + "=" * 80)
     print("STEP 9: BACKTEST")
     print("=" * 80)
@@ -122,34 +177,37 @@ def main():
     metrics = calculate_backtest_metrics(backtest_df)
 
     for k, v in metrics.items():
-        print(k, ":", round(v, 4))
+        print(f"{k}: {round(v, 4)}")
 
-    # PLOTS
+    # ============================================================
+    # STEP 10: PLOTS
+    # ============================================================
     print("\n" + "=" * 80)
     print("STEP 10: PLOTS")
     print("=" * 80)
 
     os.makedirs("outputs", exist_ok=True)
 
-    evaluation_results = results
-
     plot_price_trends(final_df)
     plot_sentiment_trends(final_df)
     plot_trading_signals(backtest_df)
     plot_backtest_results(backtest_df)
-    plot_model_comparison(evaluation_results)
+    plot_model_comparison(results)
 
     print("✓ Plots saved in outputs/")
 
-    # auto-open on Mac
+    # Auto-open outputs folder on Mac
     try:
         subprocess.run(["open", "outputs"])
         print("✓ Opened outputs folder")
     except Exception as e:
         print("Could not auto-open:", e)
 
-    # SAVE
+    # ============================================================
+    # SAVE MODELS
+    # ============================================================
     os.makedirs("models", exist_ok=True)
+
     save_models(models, "models/")
     save_scaler(scaler, "models/scaler.pkl")
 
